@@ -2,7 +2,7 @@
 
 if [[ $OSTYPE == *linux* ]] ; then
    export linux=true
-   if [[ $HOSTNAME == *stanford* ]] ; then
+   if [[ $HOSTNAME == *stanford(:i)* ]] ; then
       export user_dir=~
    else
       export user_dir=/vol/simone
