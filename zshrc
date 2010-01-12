@@ -1,13 +1,13 @@
 #!/bin/zsh
 
-if [[ $OSTYPE(:l) == *linux* ]] ; then
+if [[ $OSTYPE == *linux* ]] ; then
    export linux=true
-   if [[ $HOSTNAME(:l) == *stanford* ]] ; then
+   if [[ $HOSTNAME == *stanford* || $HOSTNAME == *Stanford* ]] ; then
       export user_dir=~
    else
       export user_dir=/vol/simone
    fi
-elif [[ $OSTYPE(:l) == *darwin* ]] ; then
+elif [[ $OSTYPE == *darwin* ]] ; then
    export mac_os=true
    export user_dir=/vol/arianne
 fi
