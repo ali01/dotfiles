@@ -1,0 +1,7 @@
+#!/bin/zsh
+
+if [[ $mac_os == true ]] ; then
+   mate $zsh
+else
+   print "command unavailable on $OSTYPE"
+fi

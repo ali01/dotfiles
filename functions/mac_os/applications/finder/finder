@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if [[ -z $@ ]] ; then
+   open -a finder .
+else
+   open -a finder $@
+fi

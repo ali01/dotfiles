@@ -1,0 +1,24 @@
+#!/bin/sh
+if [[ -z $1 ]] ; then
+	cd $ec2
+elif [[ $1 == ri || $1 == run-instances ]] ; then
+	echo "Enter: Group, and AMI"
+	read -ep "Group: " group
+	read -ep "AMI: " ami
+	ec2run -k ali01-keypair -g $group $ami
+elif [[ $1 == auth || $1 == revoke ]] ; then
+	echo "Enter: Group, port range, and subnet"
+	read -ep "Group: " group
+	read -ep "Port range: " port
+	read -ep "Subnet: " subnet
+	if [[ -n $subnet ]] ; then
+		s_flag="-s"
+	fi
+	if [[ $1 == auth ]] ; then
+		ec2auth -p $port $s_flag $subnet $group
+	else
+		ec2revoke -p $port $s_flag $subnet $group
+	fi
+else
+	echo "parameter not recognized"
+fi

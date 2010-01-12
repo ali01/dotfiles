@@ -1,0 +1,33 @@
+#!/bin/sh
+
+if [[ -z $1 ]] ; then
+   cd $afs
+elif [[ $1 == -r ]] ; then   
+   aklog -cell ir.stanford.edu
+   kinit ali01
+   tokens
+elif [[ $1 == -c ]] ; then
+   if [[ -z $2 ]] ; then
+      echo "Please enter class number as second argument."
+      cd /afs/ir.stanford.edu/class/
+   else
+      cd /afs/ir.stanford.edu/class/$2
+   fi
+elif [[ $1 == -g ]] ; then
+   if [[ -z $2 ]] ; then
+      echo "Please enter group name as second argument"
+      cd /afs/ir.stanford.edu/group/
+   else 
+      cd /afs/ir.stanford.edu/group/$2
+   fi
+elif [[ $1 == start ]] ; then
+   ##External File
+   sudo /Library/OpenAFS/Tools/root.client/usr/vice/etc/afs.rc start
+   kinit ali01
+   aklog -cell ir.stanford.edu
+   tokens
+elif [[ $1 == stop ]] ; then
+   sudo /Library/OpenAFS/Tools/root.client/usr/vice/etc/afs.rc stop
+else
+   echo "Specified argument not recognized."
+fi

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [[ $1 == startproject ]] ; then
+   django-admin.py startproject $2
+elif [[ $1 == run ]] ; then
+   python manage.py runserver
+elif [[ $1 == dir ]] ; then
+   cd /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages
+else
+   python manage.py $*
+fi

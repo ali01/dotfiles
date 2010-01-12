@@ -1,0 +1,14 @@
+#!/bin/sh
+
+if [[ $# < 1 ]] ; then # look into getopt
+   echo "Usage: symclean <directory>" 
+else
+   dir=$1
+   shift
+   find $dir | while read -r file; do
+      if ! [ test -e "$file" ] ; then
+         echo "Removing broken symbolic link $file"
+         rm $@ $file
+      fi
+   done
+fi

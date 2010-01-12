@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+print; pmset -g ps; print

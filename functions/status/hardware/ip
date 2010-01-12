@@ -1,0 +1,12 @@
+#!/bin/zsh
+
+if [[ -z $1 ]] ; then
+   echo ""
+   echo "Wireless Address"
+   ipconfig getifaddr en1
+   echo "Ethernet Address"
+   ipconfig getifaddr en0
+   echo ""
+elif [[ $1 == -a ]] ; then
+   open /System/Library/PreferencePanes/Network.prefPane
+fi

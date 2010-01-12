@@ -1,0 +1,5 @@
+#!/bin/sh
+
+local dir=$(pwd)
+. $user_dir/.zshrc
+cd $dir

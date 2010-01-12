@@ -1,0 +1,15 @@
+#!/bin/sh
+
+if [[ $1 == lock ]] ; then
+   sudo cp $etc/hosts.lock /etc/hosts
+elif [[ $1 == unlock ]] ; then
+   echo "Ali, remember that time is everything."
+   sudo cp $etc/hosts.bak /etc/hosts
+   date >> $notebook/hosts.log
+elif [[ $1 == log ]] ; then
+   mate $notebook/hosts.log
+elif [[ $1 == edit ]] ; then
+   mate $etc/hosts.lock
+else
+   echo "Unrecognized argument"
+fi

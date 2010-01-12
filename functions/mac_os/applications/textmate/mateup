@@ -1,0 +1,6 @@
+#!/bin/sh
+
+(export LC_CTYPE=en_US.UTF-8;
+ cd '/Library/Application Support/TextMate';
+ sudo svn update)
+osascript -e 'tell app "TextMate" to reload bundles'
