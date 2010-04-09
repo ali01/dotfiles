@@ -5,7 +5,7 @@ if [[ $OSTYPE == *linux* ]] ; then
    if [[ $HOSTNAME == *stanford* || $HOSTNAME == *Stanford* ]] ; then
       export user_dir=~
    else
-      export user_dir=/vol/simone
+      export user_dir=/vol/arianne
    fi
 elif [[ $OSTYPE == *darwin* ]] ; then
    export mac_os=true
@@ -18,7 +18,7 @@ export shell="$code/shell"
 export zsh="$shell/zsh"
 export zshfn="$zsh/functions"
 export zconf="$zsh/conf"
-export zexec=~/".zexec"
+export zexec=~'/.zexec'
 
 autoload -U ${zshfn}/**/*(:t)
 

@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+async --exclude=".git/" /vol/arianne/home/code/academic/cs155/projects user@192.168.111.133:~

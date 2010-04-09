@@ -1,0 +1,2 @@
+export VOL_LIBRARY_PATH="/vol/usr/lib"
+export LIBRARY_PATH="$VOL_LIBRARY_PATH:$LIBRARY_PATH"

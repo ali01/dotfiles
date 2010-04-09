@@ -1,0 +1,8 @@
+#!/bin/zsh
+if [[ -z $1 ]] ; then
+	mate $notebook/todo.xml
+elif [[ $1 == '-a' ]] ; then
+   mate $notebook/todo-archive.xml
+else
+	echo "Specified argument not recognized."
+fi

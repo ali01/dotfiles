@@ -2,9 +2,9 @@
 
 setopt prompt_percent prompt_subst
 autoload colors zsh/terminfo
-if [[ "$terminfo[colors]" -ge 8 ]] ; then
+# if [[ "$terminfo[colors]" -ge 8 ]] ; then
    colors
-fi
+# fi
 
 for color in RED GREEN YELLOW BLUE MAGENTA WHITE BLACK CYAN; do
    eval CL_$color='%{$fg[${(L)color}]%}'
