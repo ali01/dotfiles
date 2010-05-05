@@ -1,0 +1,3 @@
+#!/bin/sh
+
+echo `pwd` | tr -d '\n' | pbcopy -Prefer txt

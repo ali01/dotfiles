@@ -14,7 +14,7 @@ CL_RESET="%{${reset_color}%}";
 
 PR_LINE_NUM="${CL_CYAN}%h${CL_RESET}"
 PR_USERNAME="${CL_WHITE}%n${CL_RESET}"
-PR_HOSTNAME="%M"
+PR_HOSTNAME="%m"
 PR_SUBSHELL="%(2L.[${CL_WHITE}s${CL_RESET}].)"
 PR_RET="%(?..[${CL_RED}%?${CL_RESET}])"
 PR_PWD="${CL_WHITE}%~${CL_RESET}"

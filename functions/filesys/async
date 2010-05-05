@@ -4,8 +4,8 @@ rsync --rsync-path='rsync --log-file=$HOME/.rsync/rsync_recv.log' \
       --log-file=$HOME/.rsync/rsync_send.log --human-readable \
       --force --delete --delete-during \
       --archive --no-p --no-g --chmod=ugo=rwX \
-      --compress --sparse --ipv6 \
-      --cvs-exclude --exclude=".git/" --include='*.bak' \
+      --compress --sparse \
       --stats --progress $@
 
-# --safe-links --checksum --xattrs
+# --safe-links --checksum --xattrs --ipv6 --cvs-exclude --exclude=".git/"
+# --include='*.bak' \

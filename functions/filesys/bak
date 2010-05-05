@@ -1,4 +1,4 @@
 #!/bin/sh
 
-async --exclude="*.vmwarevm/" /vol/arianne/home ali01.com:/vol/arianne
+async --exclude="*.vmwarevm/" /vol/arianne/home apter.me:/vol/arianne
 # async --exclude="Caches/" --exclude="iTunes/" --exclude="Mail/" --exclude="Chrome/" /vol/arianne/Library ali01.com:/vol/arianne
