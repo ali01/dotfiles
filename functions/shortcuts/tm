@@ -1,0 +1,3 @@
+#!/bin/sh
+
+mate "$home/notebook/time/time.xml"

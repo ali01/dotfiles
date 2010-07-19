@@ -2,20 +2,15 @@
 
 if [[ $OSTYPE == *linux* ]] ; then
    export linux=true
-   if [[ $HOSTNAME == *stanford* || $HOSTNAME == *Stanford* ]] ; then
-      export user_dir=~
-   else
-      export user_dir=/vol/arianne
-   fi
 elif [[ $OSTYPE == *darwin* ]] ; then
    export mac_os=true
-   export user_dir=/vol/arianne
 fi
 
+export user_dir=~
 export home="$user_dir/home"
+export zsh="$user_dir/.zsh"
 export code="$home/code"
 export shell="$code/shell"
-export zsh="$shell/zsh"
 export zshfn="$zsh/functions"
 export zconf="$zsh/conf"
 # export zexec=~'/.zexec'
