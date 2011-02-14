@@ -1,2 +1,2 @@
 #!/bin/sh
-alias rm='rm -fvi'
+alias rm='rm -vi'

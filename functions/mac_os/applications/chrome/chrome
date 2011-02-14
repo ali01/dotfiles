@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if [[ $1 == "-r" ]] ; then
+   cp $2 ~/Library/Application\ Support/Google/Chrome/Default/Current\ Session
+else
+   cp ~/Library/Application\ Support/Google/Chrome/Default/Current\ Session $1
+fi
