@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [[ $USER == 'root' ]] ; then
-   umask 0022
+   umask 0027
 else
-   umask 0007
+   umask 0027
 fi
