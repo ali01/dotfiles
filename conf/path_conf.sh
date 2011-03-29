@@ -9,8 +9,8 @@ typeset -U path
 path=($path_ali01 $path_vol $path_google_depot_tools $path)
 path=('/opt/local/bin' '/opt/local/sbin' $path) # macports
 
-# typeset -U cdpath
-# cdpath=(. $code "$code/academic")
+typeset -U cdpath
+cdpath=(. $code "$code/academic")
 
 typeset -U fpath
 fpath=($zshfn/**/ $fpath)
