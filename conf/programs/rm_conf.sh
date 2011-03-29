@@ -1,2 +1,2 @@
 #!/bin/sh
-alias rm='rm -vi'
+alias rm='nocorrect rm -i'

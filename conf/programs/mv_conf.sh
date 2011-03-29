@@ -1,2 +1,2 @@
 #!/bin/sh
-alias mv='mv -vi'
+alias mv='nocorrect mv -vi'

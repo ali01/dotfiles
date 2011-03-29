@@ -1,5 +1,24 @@
 #!/bin/zsh
 
+# generic shell options
+
+setopt no_bgnice
+setopt nobeep
+setopt correct
+setopt extended_glob
+setopt multios
+setopt nomatch          # no error if glob fails to expand (scp fix)
+
+unsetopt list_beep
+unsetopt chase_dots   # don't resolve .. in cd
+unsetopt chase_links  # don't resolve symbolic links in cd
+unsetopt flow_control # turn off output flow control (so ^S/^Q work)
+stty -ixon -ixoff 2>/dev/null # really, no flow control.
+
+
+
+# environment variables
+
 if [[ $OSTYPE == *linux* ]] ; then
    export linux=true
 elif [[ $OSTYPE == *darwin* ]] ; then
@@ -13,16 +32,16 @@ export code="$home/code"
 export shell="$code/shell"
 export zshfn="$zsh/functions"
 export zconf="$zsh/conf"
-# export zexec=~'/.zexec'
+
+
+# load specialized config files
 
 autoload -U ${zshfn}/**/*(:t)
 
-for script in ${zconf}/**/*.sh ; do
-   . $script
-done
-
-# for script in ${zexec}/**/* ; do
-#    . $script
-# done
+if [[ -d "${zconf}" ]] ; then
+   for script in ${zconf}/**/*.sh ; do
+      . $script
+   done
+fi
 
 cd $home

@@ -19,11 +19,11 @@
 # $DIR_WO_STICKY_COLOR"
 
 if [[ $linux == true ]] ; then
-   alias ls='ls --color'
-   alias lr='ls -lkhi --color'
+   alias ls='ls -F --color'
+   alias lr='ls -Flkhi --color'
 elif [[ $mac_os == true ]] ; then
-   alias ls='ls -G'
-   alias lr='ls -Glkhi'
+   alias ls='ls -GF'
+   alias lr='ls -GFlkhi'
 fi
-alias ll='lr'
-alias la='lr -A'
+alias ll='Flr'
+alias la='Flr -A'

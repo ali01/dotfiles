@@ -1,0 +1,3 @@
+#!/bin/sh
+
+du -sb $* | sort -rn | perl -ple 's|^(\d+)\s*(.*)$|sprintf qq(%9.2fM  $2),($1/1024/1024)|e' | less
