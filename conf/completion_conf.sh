@@ -1,3 +1,7 @@
+autoload -U compinit;
+compinit # compinit -d "${HOME}/.zsh/.zcompdump"
+
+
 # Completions
 zstyle ':completion:*' list-colors ''
 
@@ -13,7 +17,9 @@ zstyle ':completion:*' list-prompt \
   '%SAt %p: Hit TAB for more, or the character to insert%s'
 
 zstyle ':completion:*' menu select=1 _complete _ignored _approximate
-zstyle ':completion:*:*:kill:*:processes' command 'ps --forest -A -o pid,user,cmd'
+if [[ $linux == true ]] ; then
+  zstyle ':completion:*:*:kill:*:processes' command 'ps --forest -A -o pid,user,cmd'
+fi
 zstyle ':completion:*:processes-names' command 'ps axho command'
 
 # Add hostname completion for hosts in ~/.ssh/known_hosts

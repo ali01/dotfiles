@@ -15,7 +15,8 @@ unsetopt chase_links  # don't resolve symbolic links in cd
 unsetopt flow_control # turn off output flow control (so ^S/^Q work)
 stty -ixon -ixoff 2>/dev/null # really, no flow control.
 
-
+autoload -U age
+autoload -U zmv
 
 # environment variables
 
@@ -34,7 +35,7 @@ export zshfn="$zsh/functions"
 export zconf="$zsh/conf"
 
 
-# load specialized config files
+# configuration files
 
 autoload -U ${zshfn}/**/*(:t)
 

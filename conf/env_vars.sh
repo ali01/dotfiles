@@ -9,7 +9,7 @@ export experimental="$code/experimental"
 export sites="$code/sites"
 
 # Level 3
-if $mac_os ; then
+if [[ $mac_os == true ]] ; then
    export des="$user_dir/Desktop"
 fi
 
