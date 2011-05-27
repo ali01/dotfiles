@@ -1,3 +1,5 @@
 #!/bin/zsh
 
-rsync --exclude=".git/" --exclude="build" --progress -rlpt /vol/arianne/home/code/academic/cs344/router-sw/src ali01.com:~/home/router-sw
+async --exclude=".git/" --exclude="src/cli/scanner.cc" --exclude="src/cli/parser.h" --exclude="src/cli/parser.cc" --exclude="ck/" --exclude="build/" --progress -rlpt /vol/arianne/home/code/academic/cs344/router-sw ali01.com:~/home
+# async --exclude="*.a" --exclude="*.o" --exclude="build/" --progress -rlpt /vol/arianne/home/code/academic/cs344/router-sw/src/ck ali01.com:~/home/router-sw/src
+# async --progress -rlpt /vol/arianne/home/code/academic/cs344/router-sw/src/ck/build/{ck.build,ck.build.in,ck.build.ppc64,ck.build.sparcv9,ck.build.x86,ck.build.x86_64,ck.pc,ck.pc.in,regressions.build,regressions.build.in} ali01.com:~/home/router-sw/src/ck/build
