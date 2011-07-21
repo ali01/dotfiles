@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [[ -z $1 || $1 == start ]] ; then
+    sudo launchctl load -w /Library/LaunchAgents/com.nicira.vpn.plist &> /dev/null
+elif [[ $1 == stop ]] ; then
+    sudo launchctl unload -w /Library/LaunchAgents/com.nicira.vpn.plist &> /dev/null
+    scselect default
+fi
