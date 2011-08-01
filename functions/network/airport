@@ -1,14 +1,14 @@
 #!/bin/bash
 
 if [[ $1 == on ]] ; then
-    networksetup -setairportpower airport on
+    networksetup -setairportpower en1 on
 elif [[ $1 == off ]] ; then
-    networksetup -setairportpower airport off
+    networksetup -setairportpower en1 off
 elif [[ -z $1 ]] ; then
-    networksetup -getairportpower airport
+    networksetup -getairportpower en1
 elif [[ $1 == cycle ]] ; then
-    networksetup -setairportpower airport off
-    networksetup -setairportpower airport on
+    networksetup -setairportpower en1 off
+    networksetup -setairportpower en1 on
 else
     echo "Usage: $0 [on|off]"
 fi
