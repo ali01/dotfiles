@@ -1,4 +1,4 @@
 #!/bin/sh
 
 cd $HOME
-ln -s .zsh/.z* .
+ln -sf .zsh/.z* .
