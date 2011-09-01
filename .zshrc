@@ -45,4 +45,8 @@ if [[ -d "${zconf}" ]] ; then
    done
 fi
 
+if [[ $linux == true ]] ; then
+  exec ssh-agent "$SHELL"
+fi
+
 cd $home
