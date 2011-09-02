@@ -1,0 +1,4 @@
+KeepAlive yes
+ServerAliveInterval 30
+ControlMaster auto
+ControlPath ~/.ssh/master/%r@%h:%p
