@@ -27,8 +27,9 @@ elif [[ $OSTYPE == *darwin* ]] ; then
 fi
 
 export user_dir=~
+export dotfiles="$user_dir/.dotfiles"
 export home="$user_dir/home"
-export zsh="$user_dir/.zsh"
+export zsh="$dotfiles/zsh"
 export code="$home/code"
 export shell="$code/shell"
 export zshfn="$zsh/functions"

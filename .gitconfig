@@ -1,0 +1,37 @@
+[user]
+   name  = Ali Yahya
+   email = ali01@ali01.com
+
+[alias]
+   cm = commit
+   cma = commit -a
+   cmaa = commit -a --amend
+   co = checkout
+   st = status -s
+   sm = submodule
+   lg = log --graph --decorate --abbrev-commit --pretty=format:'%C(bold red)%h%C(reset) %C(bold blue)%an%C(reset) -%C(cyan)%d%C(reset) %s %C(bold cyan)(%cr)'
+   ls = log --stat --decorate --no-merges
+   lc = log ORIG_HEAD.. --stat --no-merges --decorate
+   df = diff -M
+   dfs = diff --staged -M
+   diffstat = diff --stat -r -M
+   stl = stash list
+   sts = "!sh -c 'git stash show -p stash@{$1}' -"
+   who = shortlog -s --no-merges
+   whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
+   abbr = "!sh -c 'git rev-list --all | grep ^$1 | while read commit; do git --no-pager show $commit; done' -"
+
+[color]
+   diff        = auto
+   branch      = auto
+   grep        = auto
+   showbranch  = auto
+   ui          = auto
+   interactive = auto
+   status      = auto
+
+[receive]
+   denyCurrentBranch = refuse
+
+[push]
+   default = nothing
