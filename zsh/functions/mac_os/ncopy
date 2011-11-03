@@ -1,0 +1,4 @@
+#!/bin/sh
+
+read input
+echo $input | tr -d '\n' | pbcopy
