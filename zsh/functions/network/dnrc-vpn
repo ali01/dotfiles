@@ -1,0 +1,61 @@
+#!/bin/bash
+
+get_dnrc_vpn_pid() {
+  dnrc_vpn_pid=`ps aux | grep -v grep | \
+                grep -E "openvpn .*dnrc.*.conf$" | \
+                awk '{print $2}'`
+}
+
+usage() {
+  echo "usage: $0 [options] start|stop|status|log|out"
+}
+
+config_filename="dnrc.conf"
+set -- $(getopt rh "$@")
+while [ $# -gt 0 ]; do
+  case "$1" in
+    (-r) 
+      config_filename="dnrc-proxy.conf";;
+    (-h)
+      usage
+      return 0;;
+    (--)
+      shift; break;;
+    (*)
+      break;;
+  esac
+  shift
+done
+
+
+if [[ $1 == start ]] ; then
+  config_filepath="/usr/local/etc/openvpn/dnrc/$config_filename"
+  echo "using: $config_filepath"
+  sudo sh -c "nohup openvpn --config $config_filepath \
+              2>&1 | tee /var/log/openvpn/dnrc-vpn.out"
+
+elif [[ $1 == stop ]] ; then
+  get_dnrc_vpn_pid
+  sudo kill $dnrc_vpn_pid
+  scselect default
+
+elif [[ $1 == status ]] ; then
+  get_dnrc_vpn_pid
+  if [[ -n $dnrc_vpn_pid ]] ; then
+    echo "Status:  Running"
+    echo "Process: $dnrc_vpn_pid"
+
+  else
+    echo "Status: Not Running"
+  fi
+
+elif [[ $1 == log ]] ; then
+  sudo watch less /var/log/openvpn/dnrc-vpn.log
+
+elif [[ $1 == out ]] ; then
+  tail -f /var/log/openvpn/dnrc-vpn.out
+
+else
+  usage
+
+fi

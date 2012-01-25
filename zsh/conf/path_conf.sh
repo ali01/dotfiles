@@ -1,13 +1,12 @@
 #!/bin/zsh
 
+export path_user='~/bin'
 export path_vol='/vol/usr/bin'
 export path_ali01="$shell/0-path"
-export path_java="$shell/1-paths/java"
-export path_google_depot_tools="$code/research/starlight/google_src/depot_tools"
+export path_brew='/usr/local/sbin'
 
 typeset -U path
-path=($path_ali01 $path_vol $path_google_depot_tools $path)
-path=('/usr/local/sbin' $path) # brew
+path=($path_user $path_ali01 $path_brew $path_vol $path)
 
 typeset -U manpath
 manpath=('/vol/usr/man' $manpath)
@@ -17,4 +16,3 @@ manpath=('/vol/usr/man' $manpath)
 
 typeset -U fpath
 fpath=($zshfn/**/ $fpath)
-

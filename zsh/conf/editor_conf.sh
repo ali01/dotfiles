@@ -9,5 +9,5 @@ if [[ $linux == true ]] ; then
 elif [[ $mac_os == true ]] ; then
    export GIT_EDITOR='mate -w'
    export VISUAL='mate -w'
-   export EDITOR='mate'
+   export EDITOR='mate -w'
 fi
