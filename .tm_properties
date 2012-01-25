@@ -4,5 +4,5 @@ softTabs = true
 tabSize = 2
 showInvisibles = true
 
-[python]
+[ source.python ]
 tabSize = 4
