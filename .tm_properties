@@ -1,4 +1,8 @@
 fontName = "Monaco"
 fontSize = 12
 softTabs = true
-invisibles = true
+tabSize = 2
+showInvisibles = true
+
+[python]
+tabSize = 4
