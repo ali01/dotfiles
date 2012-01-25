@@ -5,7 +5,7 @@ tabSize = 2
 showInvisibles = true
 
 [ source ]
-softWrap = false
+softWrap = true
 wrapColumn = 80
 
 [ source.python ]
