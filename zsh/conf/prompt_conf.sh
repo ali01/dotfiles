@@ -28,8 +28,6 @@ PR_SUBSHELL="%(2L.[s].)"
 PR_RET="%(?..[${CL_RED}%?${CL_RESET}])"
 PR_PWD="%~"
 
-
-export TERM=xterm-256color # default
 export PS1='${PR_LINE_NUM} ${PR_USERNAME}(${PR_HOSTNAME})${PR_SUBSHELL}${PR_RET}: '
 export RPS1='[$PR_PWD]'
 export PS2='%_>' # default
