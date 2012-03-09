@@ -12,6 +12,10 @@ wrapColumn = 80
 [ source.python ]
 tabSize = 4
 
+[ source.java ]
+softWrap = false
+wrapColumn = "Use Window Frame"
+
 [ text.plain ]
 softWrap = true
 wrapColumn = "Use Window Frame"
