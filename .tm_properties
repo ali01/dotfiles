@@ -26,3 +26,7 @@ wrapColumn = "Use Window Frame"
 [ text.html.markdown ]
 softWrap = true
 wrapColumn = "Use Window Frame"
+spellChecking = true
+
+[ text.tex ]
+spellChecking = true
