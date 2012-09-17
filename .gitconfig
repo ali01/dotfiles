@@ -1,6 +1,6 @@
 [user]
-   name  = Ali Yahya
-   email = ali01@ali01.com
+	name = Ali Yahya
+	email = git@outlast.me
 
 [alias]
    cm = commit
@@ -9,9 +9,11 @@
    co = checkout
    st = status -s
    sm = submodule
-   lg = log --graph --decorate --abbrev-commit --pretty=format:'%C(bold red)%h%C(reset) %C(bold blue)%an%C(reset) -%C(cyan)%d%C(reset) %s %C(bold cyan)(%cr)'
+   lg = log --graph --decorate --abbrev-commit --pretty=format:'%C(bold red)%h%C(reset) %C(bold blue)%an%C(reset) -%C(cyan)%d%C(reset) %s %C(bold cyan)(%cd)'
+   lh = log --graph --decorate --abbrev-commit --pretty=format:'%C(bold red)%h%C(reset) %C(bold blue)%an%C(reset) -%C(cyan)%d%C(reset) %s %C(bold cyan)(%cr)'
    ls = log --stat --decorate --no-merges
    lc = log ORIG_HEAD.. --stat --no-merges --decorate
+   lu = log ..@{upstream}
    df = diff -M
    dfs = diff --staged -M
    diffstat = diff --stat -r -M
@@ -29,6 +31,9 @@
    ui          = auto
    interactive = auto
    status      = auto
+
+[branch]
+   autosetuprebase = always
 
 [receive]
    denyCurrentBranch = refuse
