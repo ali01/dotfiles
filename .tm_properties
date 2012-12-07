@@ -4,6 +4,7 @@ softTabs = true
 tabSize = 2
 showInvisibles = true
 showWrapColumn = true
+windowTitle = "$TM_FILEPATH"
 wrapColumn = 80
 
 [ source ]
