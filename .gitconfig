@@ -7,6 +7,7 @@
    cma = commit -a
    cmaa = commit -a --amend
    co = checkout
+   ft = fetch -p
    st = status -s
    sm = submodule
    lg = log --graph --decorate --abbrev-commit --pretty=format:'%C(bold red)%h%C(reset) %C(bold blue)%an%C(reset) -%C(cyan)%d%C(reset) %s %C(bold cyan)(%cd)'
@@ -22,6 +23,7 @@
    who = shortlog -s --no-merges
    whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
    abbr = "!sh -c 'git rev-list --all | grep ^$1 | while read commit; do git --no-pager show $commit; done' -"
+   praise = blame
 
 [color]
    diff        = auto
@@ -32,11 +34,17 @@
    interactive = auto
    status      = auto
 
+[apply]
+   whitespace = fix
+
 [branch]
    autosetuprebase = always
+
+[rebase]
+  autosquash = true
 
 [receive]
    denyCurrentBranch = refuse
 
 [push]
-   default = nothing
+   default = upstream
