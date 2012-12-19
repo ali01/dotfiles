@@ -1,2 +1,2 @@
 #!/bin/sh
-alias cp='nocorrect cp -ri'
+alias cp='nocorrect cp -Ri'
