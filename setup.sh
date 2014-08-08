@@ -14,4 +14,5 @@ ln -sf $DOTFILES_DIR/zsh/.z* $HOME
 mkdir -p ~/home
 mkdir -p ~/.ssh/master
 touch ~/.ssh/known_hosts
-cp -n $DOTFILES_DIR/ssh/config-base ~/.ssh/config
+
+ln -sf $DOTFILES_DIR/ssh/config-base ~/.ssh/config
