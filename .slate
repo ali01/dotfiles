@@ -15,5 +15,5 @@ bind w:ctrl,shift move screenOriginX+screenSizeX/3;screenOriginY screenSizeX/3;s
 bind q:ctrl,alt push left bar-resize:screenSizeX/2
 bind e:ctrl,alt push right bar-resize:screenSizeX/2
 
-#bind s:ctrl,shift 
-#bind s:ctrl,shift,cmd 
+bind s:ctrl,shift move screenOriginX+screenSizeX/4;screenOriginY screenSizeX/2;screenSizeY
+bind s:ctrl,shift,cmd move screenOriginX+screenSizeX/6;screenOriginY 2*screenSizeX/3;screenSizeY
