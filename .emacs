@@ -16,3 +16,6 @@
 (load-theme 'brin t)
 (global-linum-mode 1)
 
+(require 'whitespace)
+(setq whitespace-style '(face tabs lines-tail trailing))
+(global-whitespace-mode t)
