@@ -87,7 +87,7 @@
 
 ;; *****************************************************************************************
 
-(provide-theme 'brin)
+(provide 'color-theme)
 
 ;; Local Variables:
 ;; no-byte-compile: t
