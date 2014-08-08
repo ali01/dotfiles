@@ -1,0 +1,19 @@
+config defaultToCurrentScreen true
+
+bind esc:cmd focus 'iTerm'
+bind f2:cmd focus 'Google Chrome'
+
+bind w:ctrl,cmd push left bar-resize:screenSizeX
+bind q:ctrl,cmd push left bar-resize:2*screenSizeX/3
+bind e:ctrl,cmd push right bar-resize:2*screenSizeX/3
+
+
+bind q:ctrl,shift push left bar-resize:screenSizeX/3
+bind e:ctrl,shift push right bar-resize:screenSizeX/3
+bind w:ctrl,shift move screenOriginX+screenSizeX/3;screenOriginY screenSizeX/3;screenSizeY
+
+bind q:ctrl,alt push left bar-resize:screenSizeX/2
+bind e:ctrl,alt push right bar-resize:screenSizeX/2
+
+#bind s:ctrl,shift 
+#bind s:ctrl,shift,cmd 
