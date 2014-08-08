@@ -1,4 +1,8 @@
 KeepAlive yes
 ServerAliveInterval 30
-ControlMaster auto
-ControlPath ~/.ssh/master/%r@%h:%p
+#ControlMaster auto
+#ControlPath ~/.ssh/master/%r@%h:%p
+
+Host enrage.me
+     HostName enrage.me
+     User walrus
