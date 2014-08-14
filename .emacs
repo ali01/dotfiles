@@ -5,6 +5,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(guess-style-guesser-alist (quote ((indent-tabs-mode . guess-style-guess-tabs-mode))))
+ '(indent-tabs-mode nil)
  '(deft-text-mode (quote markdown-mode))
  '(linum-format "%4d "))
 
@@ -31,6 +33,10 @@
 
 ;; Coding style preferences.
 (require 'google-coding-style)
+
+;; Load in smart tabs (indent with hard tabs, indent with spaces) when we need
+;; to edit code written by evil people.
+(require 'smarttabs)
 
 ;; Go mode.
 (require 'go-mode-load)
