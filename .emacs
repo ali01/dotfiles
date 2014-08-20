@@ -31,6 +31,9 @@
 (setq whitespace-style '(face tabs lines-tail trailing))
 (whitespace-mode t)
 
+;; Default tab size
+(setq default-tab-width 2)
+
 ;; Coding style preferences.
 (require 'google-coding-style)
 
