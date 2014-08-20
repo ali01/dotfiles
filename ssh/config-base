@@ -6,3 +6,7 @@ ServerAliveInterval 30
 Host enrage.me
      HostName enrage.me
      User walrus
+
+Host simone
+     HostName simone.outlast.me
+     User alive
