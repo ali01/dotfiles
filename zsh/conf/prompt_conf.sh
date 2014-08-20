@@ -24,10 +24,9 @@ CL_RESET="%{${reset_color}%}";
 PR_LINE_NUM="${CL_CYAN}%h${CL_RESET}"
 PR_USERNAME="%n"
 PR_HOSTNAME="%m"
-PR_SUBSHELL="%(2L.[s].)"
 PR_RET="%(?..[${CL_RED}%?${CL_RESET}])"
 PR_PWD="%~"
 
-export PS1='${PR_LINE_NUM} ${PR_USERNAME}(${PR_HOSTNAME})${PR_SUBSHELL}${PR_RET}: '
+export PS1='${PR_LINE_NUM} ${PR_USERNAME}(${PR_HOSTNAME})${PR_RET}: '
 export RPS1='[$PR_PWD]'
 export PS2='%_>' # default
