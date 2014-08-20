@@ -50,6 +50,11 @@
 ;; Gofmt
 (add-hook 'before-save-hook #'gofmt-before-save)
 
+;; Golint
+(add-to-list 'load-path (concat (getenv "GOPATH")
+                                "/src/github.com/golang/lint/misc/emacs"))
+(require 'golint)
+
 ;; Markdown major mode
 (autoload 'markdown-mode "markdown-mode.el" "Mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
