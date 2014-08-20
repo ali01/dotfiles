@@ -44,6 +44,9 @@
 ;; Go mode.
 (require 'go-mode-load)
 
+;; Gofmt
+(add-hook 'before-save-hook #'gofmt-before-save)
+
 ;; Markdown major mode
 (autoload 'markdown-mode "markdown-mode.el" "Mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
