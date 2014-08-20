@@ -41,6 +41,9 @@
 ;; to edit code written by evil people.
 (require 'smarttabs)
 
+;; Codesearch
+(require 'codesearch)
+
 ;; Go mode.
 (require 'go-mode-load)
 
