@@ -47,6 +47,9 @@
 ;; Go mode.
 (require 'go-mode-load)
 
+;; Gofmt
+(add-hook 'before-save-hook #'gofmt-before-save)
+
 ;; Golint
 (add-to-list 'load-path (concat (getenv "GOPATH")
                                 "/src/github.com/golang/lint/misc/emacs"))
