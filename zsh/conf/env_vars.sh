@@ -1,4 +1,7 @@
 #!/bin/sh
+
+export TZ='America/Los_Angeles'
+
 # Level 2
 export daemon="$code/scripts/0-daemon"
 export scripts="$code/scripts"
