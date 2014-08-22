@@ -53,7 +53,7 @@
 ;; Golint
 (add-to-list 'load-path (concat (getenv "GOPATH")
                                 "/src/github.com/golang/lint/misc/emacs"))
-(require 'golint)
+(require 'golint nil 'noerror)
 
 ;; Markdown major mode
 (autoload 'markdown-mode "markdown-mode.el" "Mode for editing Markdown files" t)
