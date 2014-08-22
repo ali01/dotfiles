@@ -2,6 +2,6 @@
 
 alias emacs='emacs -nw'
 
-export GIT_EDITOR='emacs'
-export VISUAL='emacs'
-export EDITOR='emacs'
+export EDITOR='emacsclient -t --alternate-editor="" -c "$@"'
+export GIT_EDITOR='$EDITOR'
+export VISUAL='$EDITOR'
