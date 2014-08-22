@@ -1,6 +1,11 @@
 #!/bin/zsh
 
-export GOPATH="/home/alive/home/code/go"
+if [[ $OSTYPE == *linux* ]] ; then
+  export GOPATH="/home/alive/home/code/go"
+elif [[ $OSTYPE == *darwin* ]] ; then
+  export GOPATH="/Users/alive/home/code/go"
+fi
+
 export go_base='/usr/local/go'
 
 typeset -U path
