@@ -44,6 +44,12 @@
 ;; Codesearch
 (require 'codesearch)
 
+;; helm
+(add-to-list 'load-path "/usr/local/src/helm")
+(require 'helm-config)
+(require 'helm-ls-git)
+(global-set-key (kbd "C-x t") 'helm-ls-git-ls)
+
 ;; Go mode.
 (require 'go-mode-load)
 
