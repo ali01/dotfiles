@@ -64,3 +64,8 @@
 ;; Markdown major mode
 (autoload 'markdown-mode "markdown-mode.el" "Mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
+
+
+;; Google Protobuf major mode
+(require 'protobuf-mode)
+(add-to-list 'auto-mode-alist '("\\.proto$" . protobuf-mode))
