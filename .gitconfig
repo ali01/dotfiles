@@ -3,7 +3,7 @@
   email = git@outlast.me
 
 [core]
-  excludesfile = /Users/ali01/.gitignore_global
+  excludesfile = ~/.gitignore_global
 
 [alias]
   cm = commit
