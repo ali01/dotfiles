@@ -46,4 +46,12 @@ if [[ -d "${zconf}" ]] ; then
    done
 fi
 
+
+# load machine specific config file
+
+stub_path=~/.zshrc_stub
+if [[ -e $stub_path ]] ; then
+  . $stub_path
+fi
+
 cd $home
