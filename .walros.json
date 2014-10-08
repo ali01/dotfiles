@@ -77,6 +77,14 @@
       "name": "h-alpha interdict"
     },
     {
+      "id" : "1398",
+      "name": "impulse interdict"
+    },
+    {
+      "id" : "4176",
+      "name": "beard interdict"
+    },
+    {
       "id" : "5483",
       "name": "nn"
     },
@@ -85,16 +93,8 @@
       "name": "np"
     },
     {
-      "id" : "1398",
-      "name": "impulse interdict"
-    },
-    {
       "id" : "1848",
       "name": "ss"
-    },
-    {
-      "id" : "4176",
-      "name": "beard interdict"
     }
   ]
 }
