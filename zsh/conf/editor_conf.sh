@@ -1,7 +1,5 @@
 #!/bin/sh
 
-alias emacs='emacsclient -nw --alternate-editor="" -c "$@"'
-
-export EDITOR='emacs'
+export EDITOR='subl -w'
 export GIT_EDITOR='$EDITOR'
 export VISUAL='$EDITOR'
