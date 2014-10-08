@@ -1,0 +1,100 @@
+{
+  "habits": [
+    {
+      "id" : "1225",
+      "name": "sleep"
+    },
+    {
+      "id" : "2813",
+      "name": "snooze interdict"
+    },
+    {
+      "id" : "1184",
+      "name": "outlook"
+    },
+    {
+      "id" : "1164",
+      "name": "exercise"
+    },
+    {
+      "id" : "3268",
+      "name": "stretch"
+    },
+    {
+      "id" : "1487",
+      "name": "meditate"
+    },
+    {
+      "id" : "7291",
+      "name": "visualize"
+    },
+    {
+      "id" : "8048",
+      "name": "read"
+    },
+    {
+      "id" : "7363",
+      "name": "write"
+    },
+    {
+      "id" : "8042",
+      "name": "dots"
+    },
+    {
+      "id" : "3296",
+      "name": "plan"
+    },
+    {
+      "id" : "5385",
+      "name": "inbox zero"
+    },
+    {
+      "id" : "7828",
+      "name": "nutrition"
+    },
+    {
+      "id" : "7058",
+      "name": "hydration"
+    },
+    {
+      "id" : "1402",
+      "name": "action log"
+    },
+    {
+      "id" : "3392",
+      "name": "herrow hunt"
+    },
+    {
+      "id" : "7013",
+      "name": "phone interdict"
+    },
+    {
+      "id" : "3918",
+      "name": "social network interdict"
+    },
+    {
+      "id" : "7706",
+      "name": "h-alpha interdict"
+    },
+    {
+      "id" : "5483",
+      "name": "nn"
+    },
+    {
+      "id" : "7788",
+      "name": "np"
+    },
+    {
+      "id" : "1398",
+      "name": "impulse interdict"
+    },
+    {
+      "id" : "1848",
+      "name": "ss"
+    },
+    {
+      "id" : "4176",
+      "name": "beard interdict"
+    }
+  ]
+}
