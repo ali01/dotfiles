@@ -1,99 +1,108 @@
 {
+  "habit-id-regex": "^x[0-9]+$",
   "habits": [
     {
-      "id" : "1225",
-      "name": "sleep"
+      "id" : "x1225",
+      "name": "sleep",
+      "weight": 3
     },
     {
-      "id" : "2813",
+      "id" : "x2813",
       "name": "snooze interdict"
     },
     {
-      "id" : "1184",
+      "id" : "x1184",
       "name": "outlook"
     },
     {
-      "id" : "1164",
-      "name": "exercise"
+      "id" : "x1164",
+      "name": "exercise",
+      "weight": 4
     },
     {
-      "id" : "3268",
+      "id" : "x3268",
       "name": "stretch"
     },
     {
-      "id" : "1487",
-      "name": "meditate"
+      "id" : "x1487",
+      "name": "meditate",
+      "weight": 4
     },
     {
-      "id" : "7291",
+      "id" : "x7291",
       "name": "visualize"
     },
     {
-      "id" : "8048",
+      "id" : "x8048",
       "name": "read"
     },
     {
-      "id" : "7363",
+      "id" : "x7363",
       "name": "write"
     },
     {
-      "id" : "8042",
-      "name": "dots"
+      "id" : "x8042",
+      "name": "dots",
+      "weight": 16
     },
     {
-      "id" : "3296",
+      "id" : "x3296",
       "name": "plan"
     },
     {
-      "id" : "5385",
-      "name": "inbox zero"
+      "id" : "x5385",
+      "name": "inbox zero",
+      "weight": 2
     },
     {
-      "id" : "7828",
-      "name": "nutrition"
+      "id" : "x7828",
+      "name": "nutrition",
+      "weight": 3
     },
     {
-      "id" : "7058",
-      "name": "hydration"
+      "id" : "x7058",
+      "name": "hydration",
+      "weight": 2
     },
     {
-      "id" : "1402",
+      "id" : "x1402",
       "name": "action log"
     },
     {
-      "id" : "3392",
+      "id" : "x3392",
       "name": "herrow hunt"
     },
     {
-      "id" : "7013",
+      "id" : "x7013",
       "name": "phone interdict"
     },
     {
-      "id" : "3918",
+      "id" : "x3918",
       "name": "social network interdict"
     },
     {
-      "id" : "7706",
+      "id" : "x7706",
       "name": "h-alpha interdict"
     },
     {
-      "id" : "1398",
-      "name": "impulse interdict"
+      "id" : "x1398",
+      "name": "impulse interdict",
+      "weight": 4
     },
     {
-      "id" : "4176",
+      "id" : "x4176",
       "name": "beard interdict"
     },
     {
-      "id" : "5483",
+      "id" : "x5483",
       "name": "nn"
     },
     {
-      "id" : "7788",
+      "id" : "x7788",
       "name": "np"
     },
     {
-      "id" : "1848",
+      "id" : "x1848",
       "name": "ss"
     }
   ]
