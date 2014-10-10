@@ -8,24 +8,33 @@ bind f4:cmd focus 'Evernote'
 
 
 alias resizeFullScreen push left bar-resize:screenSizeX
+
 alias resizeTwoThirdsLeft push left bar-resize:2*screenSizeX/3
 alias resizeTwoThirdsRight push right bar-resize:2*screenSizeX/3
+alias resizeTwoThirdsCenter move screenOriginX+screenSizeX/6;screenOriginY 2*screenSizeX/3;screenSizeY
 
 alias resizeOneThirdLeft push left bar-resize:screenSizeX/3
 alias resizeOneThirdRight push right bar-resize:screenSizeX/3
 alias resizeOneThirdCenter move screenOriginX+screenSizeX/3;screenOriginY screenSizeX/3;screenSizeY
 
+alias resizeThreeFourthsLeft push left bar-resize:3*screenSizeX/4
+alias resizeThreeFourthsRight push right bar-resize:3*screenSizeX/4
+alias resizeThreeFourthsCenter move screenOriginX+screenSizeX/4;screenOriginY 3*screenSizeX/4;screenSizeY
+
 alias resizeHalfLeft push left bar-resize:screenSizeX/2
 alias resizeHalfRight push right bar-resize:screenSizeX/2
-
 alias resizeHalfCenter move screenOriginX+screenSizeX/4;screenOriginY screenSizeX/2;screenSizeY
-alias resizeTwoThirdsCenter move screenOriginX+screenSizeX/6;screenOriginY 2*screenSizeX/3;screenSizeY
+
+alias resizeOneFourthLL push left bar-resize:screenSizeX/4
+alias resizeOneFourthRR push right bar-resize:screenSizeX/4
 
 
 
 bind w:ctrl,cmd chain ${resizeFullScreen} | sequence throw next > ${resizeFullScreen}
+
 bind q:ctrl,cmd chain ${resizeTwoThirdsLeft} | sequence throw next > ${resizeTwoThirdsLeft}
 bind e:ctrl,cmd chain ${resizeTwoThirdsRight} | sequence throw next > ${resizeTwoThirdsRight}
+bind s:ctrl,shift,cmd chain ${resizeTwoThirdsCenter} | sequence throw next > ${resizeTwoThirdsCenter}
 
 bind q:ctrl,shift chain ${resizeOneThirdLeft} | sequence throw next > ${resizeOneThirdLeft}
 bind e:ctrl,shift chain ${resizeOneThirdRight} | sequence throw next > ${resizeOneThirdRight}
@@ -33,6 +42,10 @@ bind w:ctrl,shift chain ${resizeOneThirdCenter} | sequence throw next > ${resize
 
 bind q:ctrl,alt chain ${resizeHalfLeft} | sequence throw next > ${resizeHalfLeft}
 bind e:ctrl,alt chain ${resizeHalfRight} | sequence throw next > ${resizeHalfRight}
-
 bind s:ctrl,shift chain ${resizeHalfCenter} | sequence throw next > ${resizeHalfCenter}
-bind s:ctrl,shift,cmd chain ${resizeTwoThirdsCenter} | sequence throw next > ${resizeTwoThirdsCenter}
+
+bind 1:ctrl,cmd chain ${resizeThreeFourthsLeft} | sequence throw next > ${resizeThreeFourthsLeft}
+bind 4:ctrl,cmd chain ${resizeThreeFourthsRight} | sequence throw next > ${resizeThreeFourthsRight}
+
+bind 1:ctrl,shift chain ${resizeOneFourthLL} | sequence throw next > ${resizeOneFourthLL}
+bind 4:ctrl,shift chain ${resizeOneFourthRR} | sequence throw next > ${resizeOneFourthRR}
