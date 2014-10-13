@@ -1,14 +1,14 @@
 [user]
   name = Ali Yahya
-  email = git@outlast.me
+  email = alive@replicant.com
 
 [core]
   excludesfile = ~/.gitignore_global
 
 [alias]
   cm = commit
-  cma = commit -a
-  cmaa = commit -a --amend
+  cmsa = commit --amend --no-edit
+  cmsf = commit --amend --no-edit --all
   co = checkout
   ft = fetch -p
   st = status -s
@@ -23,7 +23,7 @@
   diffstat = diff --stat -r -M
   stl = stash list
   sts = "!sh -c 'git stash show -p stash@{$1}' -"
-  who = shortlog -s --no-merges
+  who = "!sh -c 'git shortlog -s --no-merges | sort -nr' -"
   whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
   abbr = "!sh -c 'git rev-list --all | grep ^$1 | while read commit; do git --no-pager show $commit; done' -"
   praise = blame
@@ -33,7 +33,7 @@
   branch      = auto
   grep        = auto
   showbranch  = auto
-  ui          = auto
+	ui = auto
   interactive = auto
   status      = auto
 
