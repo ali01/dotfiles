@@ -4,7 +4,7 @@
     {
       "id" : "x1225",
       "name": "sleep",
-      "weight": 3
+      "weight": 0.05
     },
     {
       "id" : "x2813",
@@ -17,7 +17,7 @@
     {
       "id" : "x1164",
       "name": "exercise",
-      "weight": 4
+      "weight": 0.05
     },
     {
       "id" : "x3268",
@@ -26,7 +26,7 @@
     {
       "id" : "x1487",
       "name": "meditate",
-      "weight": 4
+      "weight": 0.08
     },
     {
       "id" : "x7291",
@@ -43,7 +43,7 @@
     {
       "id" : "x8042",
       "name": "dots",
-      "weight": 16
+      "weight": 0.32
     },
     {
       "id" : "x3296",
@@ -52,17 +52,17 @@
     {
       "id" : "x5385",
       "name": "inbox zero",
-      "weight": 2
+      "shares": 2
     },
     {
       "id" : "x7828",
       "name": "nutrition",
-      "weight": 3
+      "shares": 3
     },
     {
       "id" : "x7058",
       "name": "hydration",
-      "weight": 2
+      "shares": 2
     },
     {
       "id" : "x1402",
@@ -87,7 +87,7 @@
     {
       "id" : "x1398",
       "name": "impulse interdict",
-      "weight": 4
+      "shares": 4
     },
     {
       "id" : "x4176",
