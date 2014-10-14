@@ -34,7 +34,8 @@
     },
     {
       "id" : "x8048",
-      "name": "read"
+      "name": "read",
+      "weight": 0.03
     },
     {
       "id" : "x7363",
@@ -53,17 +54,17 @@
     {
       "id" : "x5385",
       "name": "inbox zero",
-      "shares": 2
+      "weight": 0.03
     },
     {
       "id" : "x7828",
       "name": "nutrition",
-      "shares": 3
+      "weight": 0.05
     },
     {
       "id" : "x7058",
       "name": "hydration",
-      "shares": 2
+      "weight": 0.03
     },
     {
       "id" : "x3392",
