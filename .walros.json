@@ -38,7 +38,8 @@
     },
     {
       "id" : "x7363",
-      "name": "write"
+      "name": "write",
+      "weight": 0.04
     },
     {
       "id" : "x8042",
@@ -83,7 +84,7 @@
     {
       "id" : "x1398",
       "name": "impulse interdict",
-      "shares": 4
+      "weight": 0.05
     },
     {
       "id" : "x4176",
