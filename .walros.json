@@ -48,8 +48,15 @@
       "weight": 0.32
     },
     {
+      "id" : "x2476",
+      "name": "stars",
+      "weight": 0.08,
+      "bonus": true
+    },
+    {
       "id" : "x3296",
-      "name": "plan"
+      "name": "plan",
+      "weight": 0.03
     },
     {
       "id" : "x5385",
@@ -68,7 +75,9 @@
     },
     {
       "id" : "x3392",
-      "name": "herrow hunt"
+      "name": "hunt",
+      "weight": 0.03,
+      "bonus": true
     },
     {
       "id" : "x7013",
