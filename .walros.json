@@ -29,7 +29,8 @@
     },
     {
       "id" : "x7291",
-      "name": "visualize"
+      "name": "visualize",
+      "weight": 0.04
     },
     {
       "id" : "x8048",
@@ -119,7 +120,7 @@
     {
       "id" : "x5100",
       "name" : "speeding interdict",
-      "shares" : 2
+      "weight" : 0.03
     }
   ]
 }
