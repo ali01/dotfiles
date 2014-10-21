@@ -1,5 +1,4 @@
 {
-  "habit-id-regex": "^x[0-9]+$",
   "habits": [
     {
       "id" : "x1225",
