@@ -34,8 +34,8 @@
     },
     {
       "id" : "x8048",
-      "name": "read",
-      "weight": 0.03
+      "name": "learn",
+      "weight": 0.04
     },
     {
       "id" : "x7363",
