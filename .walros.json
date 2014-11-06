@@ -85,6 +85,10 @@
       "bonus": true
     },
     {
+      "id" : "x7785",
+      "name" : "floss"
+    },
+    {
       "id" : "x7013",
       "name": "phone interdict"
     },
@@ -121,10 +125,6 @@
       "id" : "x5100",
       "name" : "speeding interdict",
       "weight" : 0.03
-    },
-    {
-      "id" : "x7785",
-      "name" : "floss"
     }
   ]
 }
