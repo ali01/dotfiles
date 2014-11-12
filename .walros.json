@@ -75,8 +75,7 @@
     },
     {
       "id" : "x4501",
-      "name": "haxin",
-      "weight": 0.03
+      "name": "haxin"
     },
     {
       "id" : "x3392",
@@ -103,7 +102,11 @@
     {
       "id" : "x1398",
       "name": "impulse interdict",
-      "weight": 0.05
+      "weight": 0.04
+    },
+    { "id" : "x7708",
+      "name": "momentum",
+      "weight": 0.03
     },
     {
       "id" : "x4176",
