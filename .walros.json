@@ -113,16 +113,16 @@
       "name": "beard interdict"
     },
     {
+      "id" : "x1848",
+      "name": "generalized ssa"
+    },
+    {
       "id" : "x5483",
       "name": "nn"
     },
     {
       "id" : "x7788",
       "name": "np"
-    },
-    {
-      "id" : "x1848",
-      "name": "generalized ssa"
     },
     {
       "id" : "x5100",
