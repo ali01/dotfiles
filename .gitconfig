@@ -6,6 +6,7 @@
   excludesfile = ~/.gitignore_global
 
 [alias]
+  head = "!sh -c 'git show --oneline -s' -"
   cm = commit
   cmsa = commit --amend --no-edit
   cmsf = commit --amend --no-edit --all
