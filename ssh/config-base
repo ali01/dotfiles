@@ -4,5 +4,11 @@ ControlMaster auto
 ControlPath ~/.ssh/master/%r@%h:%p
 
 Host simone
-     HostName simone.outlast.me
-     User alive
+    HostName simone.outlast.me
+    User alive
+
+Host tesseract
+    HostName tesseract.hot.corp.google.com
+    HostName tesseract.hot
+    ForwardAgent yes
+    PreferredAuthentications publickey,gssapi-with-mic,hostbased,keyboard-interactive,password
