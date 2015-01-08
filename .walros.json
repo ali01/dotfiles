@@ -3,11 +3,13 @@
     {
       "id" : "x1225",
       "name": "sleep",
-      "weight": 0.05
+      "weight": 0.05,
+      "notes": [ "sleep more than 6.5 hours" ]
     },
     {
       "id" : "x2813",
-      "name": "snooze interdict"
+      "name": "snooze interdict",
+      "notes": [ "get up within 15 minutes of the first alarm" ]
     },
     {
       "id" : "x1184",
@@ -102,11 +104,16 @@
     {
       "id" : "x1398",
       "name": "impulse interdict",
-      "weight": 0.04
+      "weight": 0.04,
+      "notes": [ "complete 10 pomodoros" ]
     },
     { "id" : "x7708",
       "name": "momentum",
-      "weight": 0.03
+      "weight": 0.04,
+      "notes": [
+        "get to work within 30 minutes of arriving at the office",
+        "practice establishing momentum 5 times"
+      ]
     },
     {
       "id" : "x4176",
