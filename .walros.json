@@ -173,7 +173,10 @@
     {
       "id" : "x1398",
       "name": "impulse interdict",
-      "weight": 0.3
+      "weight": 0.03,
+      "notes": [
+        "do not give in to tasks that are impulsive more than five times per day"
+      ]
     },
     {
       "id" : "x5100",
