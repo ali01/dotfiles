@@ -171,6 +171,11 @@
       ]
     },
     {
+      "id" : "x1398",
+      "name": "impulse interdict",
+      "weight": 0.3
+    },
+    {
       "id" : "x5100",
       "name" : "speeding interdict",
       "weight" : 0.03
@@ -182,11 +187,6 @@
     {
       "id" : "x7788",
       "name": "np"
-    },
-    {
-      "id" : "x1398",
-      "name": "impulse interdict",
-      "weight": 0.0
     },
     {
       "id" : "x4501",
