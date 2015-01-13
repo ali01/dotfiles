@@ -15,6 +15,22 @@
       "id" : "x1184",
       "name": "outlook"
     },
+    { "id" : "x7708",
+      "name": "bootstrap",
+      "weight": 0.03,
+      "notes": [
+        "get to work within 30 minutes of arriving at the office",
+        "the clock may be paused during meditation"
+      ]
+    },
+    {
+      "id": "x5680",
+      "name": "momentum",
+      "weight": 0.05,
+      "notes": [
+        "complete three sets of four pomodoros each"
+      ]
+    },
     {
       "id" : "x1164",
       "name": "exercise",
@@ -32,12 +48,20 @@
     {
       "id" : "x7291",
       "name": "visualize",
-      "weight": 0.04
+      "weight": 0.05,
+      "notes": [
+        "establish a process to switch into a desired state of mind",
+        "1. write down the things that are currently on my mind\n 2. write down the things that should be on my mind\n 3. cross out the things that shouldn't be on my mind\n 4. meditate for 10 minutes with a focus on the things that should be on my mind.\n 5. resort to liftoff music if necessary."
+      ]
     },
     {
       "id" : "x8048",
       "name": "learn",
-      "weight": 0.06
+      "weight": 0.10,
+      "notes": [
+        "this is my foremost goal during this chapter of my life",
+        "spend 1+ hours learning a new field"
+      ]
     },
     {
       "id" : "x7363",
@@ -47,7 +71,8 @@
     {
       "id" : "x8042",
       "name": "dots",
-      "weight": 0.32
+      "weight": 0.32,
+      "notes": ["get shit done"]
     },
     {
       "id" : "x2476",
@@ -57,27 +82,19 @@
     },
     {
       "id" : "x3296",
-      "name": "plan",
-      "weight": 0.03
+      "name": "plan"
     },
     {
       "id" : "x5385",
-      "name": "inbox zero",
-      "weight": 0.03
+      "name": "inbox zero"
     },
     {
       "id" : "x7828",
-      "name": "nutrition",
-      "weight": 0.05
+      "name": "nutrition"
     },
     {
       "id" : "x7058",
-      "name": "hydration",
-      "weight": 0.03
-    },
-    {
-      "id" : "x4501",
-      "name": "haxin"
+      "name": "hydration"
     },
     {
       "id" : "x3392",
@@ -91,29 +108,25 @@
     },
     {
       "id" : "x7013",
-      "name": "phone interdict"
+      "name": "phone interdict",
+      "weight": 0.05,
+      "notes": [
+        "do not unlock my phone without reason more than five times per day",
+        "banish my phone twice for four hours at a time"
+      ]
     },
     {
       "id" : "x3918",
-      "name": "social network interdict"
+      "name": "social network interdict",
+      "weight": 0.04,
+      "notes": [
+        "do not open social networking apps outside of weekends",
+        "do not open social networking apps more than once a week"
+      ]
     },
     {
       "id" : "x7706",
       "name": "h-alpha interdict"
-    },
-    {
-      "id" : "x1398",
-      "name": "impulse interdict",
-      "weight": 0.04,
-      "notes": [ "complete 10 pomodoros" ]
-    },
-    { "id" : "x7708",
-      "name": "momentum",
-      "weight": 0.04,
-      "notes": [
-        "get to work within 30 minutes of arriving at the office",
-        "practice establishing momentum 5 times"
-      ]
     },
     {
       "id" : "x4176",
@@ -121,7 +134,34 @@
     },
     {
       "id" : "x1848",
-      "name": "generalized ssa"
+      "name": "generalized ssa",
+      "notes": [
+        "Forge meaning. Build identity."
+      ]
+    },
+    {
+      "id": "x5707",
+      "name": "feynman potential",
+      "notes": [
+        "be engaged with your surroundings",
+        "fuel your day with curiosity"
+      ]
+    },
+    {
+      "id": "x2901",
+      "name": "eye contact"
+    },
+    {
+      "id": "x7542",
+      "name": "trim speech"
+    },
+    {
+      "id": "x3969",
+      "name": "gratitude"
+    },
+    {
+      "id": "x6799",
+      "name": "humor"
     },
     {
       "id" : "x5483",
@@ -135,6 +175,23 @@
       "id" : "x5100",
       "name" : "speeding interdict",
       "weight" : 0.03
+    },
+    {
+      "id": "x2028",
+      "name": "active meditation",
+      "notes": [
+        "whenever spurious thoughts arise, neutralize its effect as in meditation: visualize the thought fade into the distance and bring back attention to the task at hand"
+      ]
+    },
+    {
+      "id" : "x1398",
+      "name": "impulse interdict",
+      "weight": 0.0
+    },
+    {
+      "id" : "x4501",
+      "name": "haxin",
+      "weight": 0.0
     }
   ]
 }
