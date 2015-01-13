@@ -164,12 +164,11 @@
       "name": "humor"
     },
     {
-      "id" : "x5483",
-      "name": "nn"
-    },
-    {
-      "id" : "x7788",
-      "name": "np"
+      "id": "x2028",
+      "name": "active meditation",
+      "notes": [
+        "whenever spurious thoughts arise, neutralize its effect as in meditation: visualize the thought fade into the distance and bring back attention to the task at hand"
+      ]
     },
     {
       "id" : "x5100",
@@ -177,11 +176,12 @@
       "weight" : 0.03
     },
     {
-      "id": "x2028",
-      "name": "active meditation",
-      "notes": [
-        "whenever spurious thoughts arise, neutralize its effect as in meditation: visualize the thought fade into the distance and bring back attention to the task at hand"
-      ]
+      "id" : "x5483",
+      "name": "nn"
+    },
+    {
+      "id" : "x7788",
+      "name": "np"
     },
     {
       "id" : "x1398",
