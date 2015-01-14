@@ -65,8 +65,7 @@
     },
     {
       "id" : "x7363",
-      "name": "write",
-      "weight": 0.04
+      "name": "write"
     },
     {
       "id" : "x8042",
@@ -118,7 +117,7 @@
     {
       "id" : "x3918",
       "name": "social network interdict",
-      "weight": 0.04,
+      "weight": 0.08,
       "notes": [
         "do not open social networking apps outside of weekends",
         "do not open social networking apps more than once a week"
@@ -167,7 +166,7 @@
       "id": "x2028",
       "name": "active meditation",
       "notes": [
-        "whenever spurious thoughts arise, neutralize its effect as in meditation: visualize the thought fade into the distance and bring back attention to the task at hand"
+        "whenever spurious thoughts arise, neutralize its effect as in meditation: visualize the thought fade into the distance and bring back attention to the current context"
       ]
     },
     {
