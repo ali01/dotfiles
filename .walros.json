@@ -4,16 +4,19 @@
       "id" : "x1225",
       "name": "sleep",
       "weight": 0.05,
-      "notes": [ "sleep more than 6.5 hours" ]
+      "notes": [ "sleep more than 6.5 hours" ],
+      "tags": [ "dawn" ]
     },
     {
       "id" : "x2813",
       "name": "snooze interdict",
-      "notes": [ "get up within 15 minutes of the first alarm" ]
+      "notes": [ "get up within 15 minutes of the first alarm" ],
+      "tags": [ "dawn" ]
     },
     {
       "id" : "x1184",
-      "name": "outlook"
+      "name": "outlook",
+      "tags": [ "dawn" ]
     },
     { "id" : "x7708",
       "name": "bootstrap",
@@ -21,7 +24,8 @@
       "notes": [
         "get to work within 30 minutes of arriving at the office",
         "the clock may be paused during meditation"
-      ]
+      ],
+      "tags": [ "dawn" ]
     },
     {
       "id": "x5680",
@@ -81,7 +85,8 @@
     },
     {
       "id" : "x3296",
-      "name": "plan"
+      "name": "plan",
+      "tags": [ "dusk" ]
     },
     {
       "id" : "x5385",
@@ -89,11 +94,13 @@
     },
     {
       "id" : "x7828",
-      "name": "nutrition"
+      "name": "nutrition",
+      "tags": [ "dusk" ]
     },
     {
       "id" : "x7058",
-      "name": "hydration"
+      "name": "hydration",
+      "tags": [ "dusk" ]
     },
     {
       "id" : "x3392",
@@ -112,7 +119,8 @@
       "notes": [
         "do not unlock my phone without reason more than five times per day",
         "banish my phone twice for four hours at a time"
-      ]
+      ],
+      "tags": [ "dusk" ]
     },
     {
       "id" : "x3918",
@@ -121,22 +129,26 @@
       "notes": [
         "do not open social networking apps outside of weekends",
         "do not open social networking apps more than once a week"
-      ]
+      ],
+      "tags": [ "dusk" ]
     },
     {
       "id" : "x7706",
-      "name": "h-alpha interdict"
+      "name": "h-alpha interdict",
+      "tags": [ "dusk" ]
     },
     {
       "id" : "x4176",
-      "name": "beard interdict"
+      "name": "beard interdict",
+      "tags": [ "dusk" ]
     },
     {
       "id" : "x1848",
       "name": "generalized ssa",
       "notes": [
         "Forge meaning. Build identity."
-      ]
+      ],
+      "tags": [ "dusk" ]
     },
     {
       "id": "x5707",
@@ -144,30 +156,36 @@
       "notes": [
         "be engaged with your surroundings",
         "fuel your day with curiosity"
-      ]
+      ],
+      "tags": [ "dusk" ]
     },
     {
       "id": "x2901",
-      "name": "eye contact"
+      "name": "eye contact",
+      "tags": [ "dusk" ]
     },
     {
       "id": "x7542",
-      "name": "trim speech"
+      "name": "trim speech",
+      "tags": [ "dusk" ]
     },
     {
       "id": "x3969",
-      "name": "gratitude"
+      "name": "gratitude",
+      "tags": [ "dusk" ]
     },
     {
       "id": "x6799",
-      "name": "humor"
+      "name": "humor",
+      "tags": [ "dusk" ]
     },
     {
       "id": "x2028",
       "name": "active meditation",
       "notes": [
         "whenever spurious thoughts arise, neutralize its effect as in meditation: visualize the thought fade into the distance and bring back attention to the current context"
-      ]
+      ],
+      "tags": [ "dusk" ]
     },
     {
       "id" : "x1398",
@@ -175,20 +193,24 @@
       "weight": 0.03,
       "notes": [
         "do not give in to tasks that are impulsive more than five times per day"
-      ]
+      ],
+      "tags" : [ "dusk" ]
     },
     {
       "id" : "x5100",
       "name" : "speeding interdict",
-      "weight" : 0.03
+      "weight" : 0.03,
+      "tags" : [ "dusk" ]
     },
     {
       "id" : "x5483",
-      "name": "nn"
+      "name": "nn",
+      "tags" : [ "dusk" ]
     },
     {
       "id" : "x7788",
-      "name": "np"
+      "name": "np",
+      "tags" : [ "dusk" ]
     },
     {
       "id" : "x4501",
