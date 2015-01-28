@@ -125,7 +125,7 @@
     {
       "id" : "x3918",
       "name": "social network interdict",
-      "weight": 0.08,
+      "weight": 0.04,
       "notes": [
         "do not open social networking apps outside of weekends",
         "do not open social networking apps more than once a week"
@@ -176,8 +176,7 @@
     },
     {
       "id": "x6799",
-      "name": "humor",
-      "tags": [ "dusk" ]
+      "name": "humor"
     },
     {
       "id": "x2028",
