@@ -20,7 +20,7 @@
     },
     { "id" : "x7708",
       "name": "bootstrap",
-      "weight": 0.03,
+      "weight": 0.04,
       "notes": [
         "get to work within 30 minutes of arriving at the office",
         "the clock may be paused during meditation"
@@ -30,9 +30,18 @@
     {
       "id": "x5680",
       "name": "momentum",
-      "weight": 0.05,
+      "weight": 0.12,
       "notes": [
-        "complete three sets of four pomodoros each"
+        "complete three sets of four work units each"
+      ]
+    },
+    {
+      "id": "x6408",
+      "name": "momentum +",
+      "weight": 0.04,
+      "bonus": true,
+      "notes": [
+        "in addition to `momentum`, complete an additional set of four work units."
       ]
     },
     {
@@ -52,7 +61,7 @@
     {
       "id" : "x7291",
       "name": "visualize",
-      "weight": 0.05,
+      "weight": 0.04,
       "notes": [
         "establish a process to switch into a desired state of mind",
         "1. write down the things that are currently on my mind\n 2. write down the things that should be on my mind\n 3. cross out the things that shouldn't be on my mind\n 4. meditate for 10 minutes with a focus on the things that should be on my mind.\n 5. resort to liftoff music if necessary."
@@ -115,7 +124,7 @@
     {
       "id" : "x7013",
       "name": "phone interdict",
-      "weight": 0.05,
+      "weight": 0.04,
       "notes": [
         "do not unlock my phone without reason more than five times per day",
         "banish my phone twice for four hours at a time"
@@ -125,7 +134,7 @@
     {
       "id" : "x3918",
       "name": "social network interdict",
-      "weight": 0.04,
+      "weight": 0.03,
       "notes": [
         "do not open social networking apps outside of weekends",
         "do not open social networking apps more than once a week"
