@@ -12,21 +12,18 @@ for color in RED GREEN YELLOW BLUE MAGENTA WHITE BLACK CYAN; do
 done
 CL_RESET="%{${reset_color}%}";
 
-# diurnal
-# PR_LINE_NUM="${CL_CYAN}%h${CL_RESET}"
-# PR_USERNAME="${CL_WHITE}%n${CL_RESET}"
-# PR_HOSTNAME="%m"
-# PR_SUBSHELL="%(2L.[${CL_WHITE}s${CL_RESET}].)"
-# PR_RET="%(?..[${CL_RED}%?${CL_RESET}])"
-# PR_PWD="${CL_WHITE}%~${CL_RESET}"
-
-# nocturnal
-PR_LINE_NUM="${CL_CYAN}%h${CL_RESET}"
+PR_PREFIX="${CL_RED}λ${CL_RESET}"
 PR_USERNAME="%n"
 PR_HOSTNAME="%m"
 PR_RET="%(?..[${CL_RED}%?${CL_RESET}])"
 PR_PWD="%~"
 
-export PS1='${PR_LINE_NUM} ${PR_USERNAME}(${PR_HOSTNAME})${PR_RET}: '
+if [[ `hostname -s` != "alive-macbookpro" ]]
+then
+    export PS1="${PR_PREFIX} ${PR_HOSTNAME}${PR_RET}: "
+else
+    export PS1="${PR_PREFIX} "
+fi
+
 export RPS1='[$PR_PWD]'
 export PS2='%_>' # default
