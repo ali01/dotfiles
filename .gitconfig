@@ -4,6 +4,7 @@
 
 [core]
   excludesfile = ~/.gitignore_global
+	pager = less -S
 
 [alias]
   syn = show --oneline -s
