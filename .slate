@@ -3,7 +3,7 @@ config defaultToCurrentScreen true
 bind esc:cmd focus 'iTerm'
 bind f1:cmd focus 'Sublime Text'
 bind f2:cmd focus 'Google Chrome'
-bind f3:cmd focus 'Scapple'
+bind f3:cmd focus 'Spotify'
 bind f4:cmd focus 'Evernote'
 
 
