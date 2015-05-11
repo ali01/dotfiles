@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+
+alias ..="cd .."
+
 # generic shell options
 
 setopt no_bgnice

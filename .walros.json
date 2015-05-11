@@ -8,23 +8,8 @@
       "tags": [ "dawn" ]
     },
     {
-      "id" : "x2813",
-      "name": "snooze interdict",
-      "notes": [ "get up within 15 minutes of the first alarm" ],
-      "tags": [ "dawn" ]
-    },
-    {
       "id" : "x1184",
       "name": "outlook",
-      "tags": [ "dawn" ]
-    },
-    { "id" : "x7708",
-      "name": "bootstrap",
-      "weight": 0.04,
-      "notes": [
-        "get to work within 30 minutes of arriving at the office",
-        "the clock may be paused during meditation"
-      ],
       "tags": [ "dawn" ]
     },
     {
@@ -122,6 +107,15 @@
       "name" : "floss"
     },
     {
+      "id" : "x6709",
+      "name" : "clockwork",
+      "weight": 0.05,
+      "tags": [ "dusk" ],
+      "notes": [
+        "30 min wakeup\n30 min bootsrap\n10 min shower\n12 min manscape\n200 min break"
+      ]
+    },
+    {
       "id" : "x7013",
       "name": "phone interdict",
       "weight": 0.04,
@@ -149,6 +143,7 @@
     {
       "id" : "x4176",
       "name": "beard interdict",
+      "weight": 0.03,
       "tags": [ "dusk" ]
     },
     {
@@ -207,7 +202,7 @@
     {
       "id" : "x5100",
       "name" : "speeding interdict",
-      "weight" : 0.03,
+      "weight": 0.01,
       "tags" : [ "dusk" ]
     },
     {
@@ -224,6 +219,22 @@
       "id" : "x4501",
       "name": "haxin",
       "weight": 0.0
+    },
+    { "id" : "x7708",
+      "name": "bootstrap",
+      "weight": 0.0,
+      "notes": [
+        "get to work within 30 minutes of arriving at the office",
+        "the clock may be paused during meditation"
+      ],
+      "tags": [ "dawn" ]
+    },
+    {
+      "id" : "x2813",
+      "name": "snooze interdict",
+      "weight": 0.0,
+      "notes": [ "get up within 15 minutes of the first alarm" ],
+      "tags": [ "dawn" ]
     }
   ]
 }

@@ -1,11 +1,9 @@
 config defaultToCurrentScreen true
 
-bind esc:cmd focus 'iTerm'
-bind f1:cmd focus 'Sublime Text'
-bind f2:cmd focus 'Google Chrome'
-bind f3:cmd focus 'Spotify'
-bind f4:cmd focus 'Evernote'
-
+bind 1:alt focus 'iTerm'
+bind 2:alt focus 'Sublime Text'
+bind 3:alt focus 'Google Chrome'
+bind 4:alt focus 'Spotify'
 
 alias resizeFullScreen push left bar-resize:screenSizeX
 
@@ -30,22 +28,22 @@ alias resizeOneFourthRR push right bar-resize:screenSizeX/4
 
 
 
-bind w:ctrl,cmd chain ${resizeFullScreen} | sequence throw next > ${resizeFullScreen}
+bind f1:ctrl chain ${resizeFullScreen} | sequence throw next > ${resizeFullScreen}
 
-bind q:ctrl,cmd chain ${resizeTwoThirdsLeft} | sequence throw next > ${resizeTwoThirdsLeft}
-bind e:ctrl,cmd chain ${resizeTwoThirdsRight} | sequence throw next > ${resizeTwoThirdsRight}
-bind s:ctrl,shift,cmd chain ${resizeTwoThirdsCenter} | sequence throw next > ${resizeTwoThirdsCenter}
+bind f2:ctrl,cmd chain ${resizeTwoThirdsLeft} | sequence throw next > ${resizeTwoThirdsLeft}
+bind f1:ctrl,cmd chain ${resizeTwoThirdsCenter} | sequence throw next > ${resizeTwoThirdsCenter}
+bind f3:ctrl,cmd chain ${resizeTwoThirdsRight} | sequence throw next > ${resizeTwoThirdsRight}
 
-bind q:ctrl,shift chain ${resizeOneThirdLeft} | sequence throw next > ${resizeOneThirdLeft}
-bind e:ctrl,shift chain ${resizeOneThirdRight} | sequence throw next > ${resizeOneThirdRight}
-bind w:ctrl,shift chain ${resizeOneThirdCenter} | sequence throw next > ${resizeOneThirdCenter}
+bind f2:ctrl,shift chain ${resizeHalfLeft} | sequence throw next > ${resizeHalfLeft}
+bind f1:ctrl,shift chain ${resizeHalfCenter} | sequence throw next > ${resizeHalfCenter}
+bind f3:ctrl,shift chain ${resizeHalfRight} | sequence throw next > ${resizeHalfRight}
 
-bind q:ctrl,alt chain ${resizeHalfLeft} | sequence throw next > ${resizeHalfLeft}
-bind e:ctrl,alt chain ${resizeHalfRight} | sequence throw next > ${resizeHalfRight}
-bind s:ctrl,shift chain ${resizeHalfCenter} | sequence throw next > ${resizeHalfCenter}
+bind f2:ctrl,alt chain ${resizeOneThirdLeft} | sequence throw next > ${resizeOneThirdLeft}
+bind f1:ctrl,alt chain ${resizeOneThirdCenter} | sequence throw next > ${resizeOneThirdCenter}
+bind f3:ctrl,alt chain ${resizeOneThirdRight} | sequence throw next > ${resizeOneThirdRight}
 
-bind 1:ctrl,cmd chain ${resizeThreeFourthsLeft} | sequence throw next > ${resizeThreeFourthsLeft}
-bind 4:ctrl,cmd chain ${resizeThreeFourthsRight} | sequence throw next > ${resizeThreeFourthsRight}
+bind f2:ctrl,shift,cmd chain ${resizeThreeFourthsLeft} | sequence throw next > ${resizeThreeFourthsLeft}
+bind f3:ctrl,shift,cmd chain ${resizeThreeFourthsRight} | sequence throw next > ${resizeThreeFourthsRight}
 
-bind 1:ctrl,shift chain ${resizeOneFourthLL} | sequence throw next > ${resizeOneFourthLL}
-bind 4:ctrl,shift chain ${resizeOneFourthRR} | sequence throw next > ${resizeOneFourthRR}
+bind f2:ctrl,shift,alt chain ${resizeOneFourthLL} | sequence throw next > ${resizeOneFourthLL}
+bind f3:ctrl,shift,alt chain ${resizeOneFourthRR} | sequence throw next > ${resizeOneFourthRR}
