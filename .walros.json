@@ -62,6 +62,27 @@
       ]
     },
     {
+      "id" : "x2697",
+      "name": "xplor",
+      "weight": 0.03,
+      "tags": [ "dusk" ],
+      "notes": [
+        "Play"
+      ]
+    },
+    {
+      "id": "x5571",
+      "name": "patience",
+      "weight": 0.02,
+      "tags": [ "dusk" ]
+    },
+    {
+      "id": "x4066",
+      "name": "strain",
+      "weight": 0.02,
+      "tags": [ "dusk" ]
+    },
+    {
       "id" : "x7363",
       "name": "write"
     },
@@ -143,7 +164,6 @@
     {
       "id" : "x4176",
       "name": "beard interdict",
-      "weight": 0.03,
       "tags": [ "dusk" ]
     },
     {
@@ -193,7 +213,7 @@
     {
       "id" : "x1398",
       "name": "impulse interdict",
-      "weight": 0.03,
+      "weight": 0.02,
       "notes": [
         "do not give in to tasks that are impulsive more than five times per day"
       ],
@@ -204,6 +224,14 @@
       "name" : "speeding interdict",
       "weight": 0.01,
       "tags" : [ "dusk" ]
+    },
+    { "id" : "x7708",
+      "name": "bootstrap",
+      "notes": [
+        "get to work within 30 minutes of arriving at the office",
+        "the clock may be paused during meditation"
+      ],
+      "tags": [ "dawn" ]
     },
     {
       "id" : "x5483",
@@ -219,15 +247,6 @@
       "id" : "x4501",
       "name": "haxin",
       "weight": 0.0
-    },
-    { "id" : "x7708",
-      "name": "bootstrap",
-      "weight": 0.0,
-      "notes": [
-        "get to work within 30 minutes of arriving at the office",
-        "the clock may be paused during meditation"
-      ],
-      "tags": [ "dawn" ]
     },
     {
       "id" : "x2813",
