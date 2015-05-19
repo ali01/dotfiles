@@ -12,3 +12,9 @@ Host tesseract
     HostName tesseract.hot
     ForwardAgent yes
     PreferredAuthentications publickey,gssapi-with-mic,hostbased,keyboard-interactive,password
+
+Host prometheus
+    HostName prometheus.pao.corp.google.com
+    HostName prometheus.pao
+    ForwardAgent yes
+    PreferredAuthentications publickey,gssapi-with-mic,hostbased,keyboard-interactive,password
