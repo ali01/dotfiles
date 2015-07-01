@@ -1,6 +1,6 @@
 [user]
   name = Ali Yahya
-  email = alive@replicant.com
+  email = alive@google.com
 
 [core]
   excludesfile = ~/.gitignore_global
@@ -53,3 +53,7 @@
 
 [push]
   default = upstream
+
+[clangFormat]
+    binary=/usr/bin/clang-format
+    style=file
