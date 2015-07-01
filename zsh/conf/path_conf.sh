@@ -1,9 +1,9 @@
 #!/bin/zsh
 
 if [[ $OSTYPE == *linux* ]] ; then
-  export GOPATH="/home/alive/home/code/go"
+  export GOPATH="/code/go"
 elif [[ $OSTYPE == *darwin* ]] ; then
-  export GOPATH="/Users/alive/home/code/go"
+  export GOPATH="/code/go"
 fi
 
 export go_base='/usr/local/go'
