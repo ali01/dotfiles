@@ -13,6 +13,7 @@
   cmsf = commit --amend --no-edit --all
   co = checkout
   ft = fetch -p
+  rs = !sh -c 'ls `git rev-parse --git-dir` | grep rebase' -
   st = status -s
   sm = submodule
   lg = log --graph --decorate --abbrev-commit --pretty=format:'%C(bold red)%h%C(reset) %C(bold blue)%an%C(reset) -%C(cyan)%d%C(reset) %s %C(bold cyan)(%cd)'
