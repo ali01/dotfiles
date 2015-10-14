@@ -7,8 +7,15 @@
 	pager = less -S
 
 [alias]
-  syn = show --oneline -s
+  sh = show --patience
+  sc = show -s
+  shm = show --minimal
+  shh = show --histogram
+  shd = show
   cm = commit
+  cme = commit --allow-empty
+  cmse = commit --allow-empty -m "stage"
+  cmsd = commit --allow-empty -m "debug"
   cmsa = commit --amend --no-edit
   cmsf = commit --amend --no-edit --all
   co = checkout
@@ -58,3 +65,5 @@
 [clangFormat]
     binary=/usr/bin/clang-format
     style=file
+[http]
+	cookiefile = /Users/alive/.gitcookies
