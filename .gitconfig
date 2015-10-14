@@ -66,4 +66,4 @@
     binary=/usr/bin/clang-format
     style=file
 [http]
-	cookiefile = /Users/alive/.gitcookies
+	cookiefile = ~/.gitcookies
