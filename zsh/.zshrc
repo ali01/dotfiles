@@ -29,6 +29,14 @@ elif [[ $OSTYPE == *darwin* ]] ; then
    export mac_os=true
 fi
 
+if [[ $mac_os == true ]] ; then
+    alias hk="open ~/home/walros.sparseimage"
+    alias lk="diskutil eject /Volumes/Code"
+fi
+
+alias hk="open ~/home/walros.sparseimage"
+alias lk="diskutil eject /Volumes/Code"
+
 export user_dir=~
 export dotfiles="$user_dir/.dotfiles"
 export home="$user_dir/home"
@@ -37,7 +45,6 @@ export code="$home/code"
 export shell="$code/shell"
 export zshfn="$zsh/functions"
 export zconf="$zsh/conf"
-
 
 # configuration files
 
