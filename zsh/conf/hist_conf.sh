@@ -1,4 +1,7 @@
 #!/bin/sh
+
+alias history="history 0"
+
 setopt histverify append_history inc_append_history \
        share_history extended_history hist_ignore_dups hist_ignore_all_dups \
        hist_reduce_blanks hist_ignore_space
