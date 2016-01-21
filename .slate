@@ -1,10 +1,5 @@
 config defaultToCurrentScreen true
 
-bind 1:alt focus 'iTerm'
-bind 2:alt focus 'Sublime Text'
-bind 3:alt focus 'Google Chrome'
-bind 4:alt focus 'iTunes'
-
 alias resizeFullScreen push left bar-resize:screenSizeX
 
 alias resizeTwoThirdsLeft push left bar-resize:2*screenSizeX/3
