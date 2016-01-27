@@ -52,7 +52,7 @@ autoload -U ${zshfn}/**/*(:t)
 
 if [[ -d "${zconf}" ]] ; then
    for script in ${zconf}/**/*.sh ; do
-      . $script
+      source $script
    done
 fi
 
