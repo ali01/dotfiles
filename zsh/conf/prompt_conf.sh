@@ -28,21 +28,20 @@ PR_RET="%(?.. [${CL_RED}%?${CL_RESET}])"
 PR_PWD="%~"
 
 function git_update() {
-  if [[ -d "./.git" ]] ; then
-    GIT_INFO="`python3 ${_GIT_PROMPT_FILEPATH}/git_prompt.py`"
+  GIT_INFO="`python3 ${_GIT_PROMPT_FILEPATH}/git_prompt.py`"
+  if [[ -n ${GIT_INFO} ]] ; then
     GIT_INFO_ARRAY=("${(@s: :)GIT_INFO}")
 
+    # Commit hash.
     GIT_COMMIT=${CL_RED}$GIT_INFO_ARRAY[1]${CL_RESET}
     GIT_PROMPT="${GIT_COMMIT} "
+
+    # Branch name.
     if [[ -n $GIT_INFO_ARRAY[2] ]] ; then
       GIT_BRANCH=${CL_CYAN}$GIT_INFO_ARRAY[2]${CL_RESET}
       GIT_PROMPT="${GIT_PROMPT}${GIT_BRANCH} "
     fi
   else
-    unset GIT_INFO
-    unset GIT_INFO_ARRAY
-    unset GIT_COMMIT
-    unset GIT_BRANCH
     unset GIT_PROMPT
   fi
 }

@@ -9,8 +9,12 @@ def branch_name(ref):
 
 
 def main():
-  stdout = subprocess.check_output(
-      ["git", "show", "-s", "--pretty=tformat:%h %d"]).decode('utf-8')
+  try:
+    stdout = subprocess.check_output(
+        ["git show -s --pretty='tformat:%h %d' 2> /dev/null"],
+        shell=True).decode('utf-8')
+  except subprocess.CalledProcessError:
+    return
 
   commit_hash = re.match(r"[A-Fa-f0-9]+", stdout).group(0)
 
