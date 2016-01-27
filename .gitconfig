@@ -18,7 +18,7 @@
   cmsd = commit --allow-empty -m "debug"
   cmsa = commit --amend --no-edit
   cmsf = commit --amend --no-edit --all
-  cmss = !sh -c 'git cmsf && git sync' -
+  cmss = !sh -c 'git cmsf && git sync $1' -
   co = checkout
   ft = fetch -p
   rs = !sh -c 'ls `git rev-parse --git-dir` | grep rebase' -
