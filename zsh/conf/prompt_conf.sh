@@ -49,7 +49,7 @@ function git_update() {
 function git_preexec() {
   case "$2" in
     git*|hub*|gh*|stg*)
-    GIT_DIRTY=1
+    export GIT_DIRTY=1
     ;;
   esac
 }
