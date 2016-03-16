@@ -16,3 +16,7 @@ mkdir -p ~/.ssh/master
 touch ~/.ssh/known_hosts
 
 ln -sf $DOTFILES_DIR/ssh/config-base ~/.ssh/config
+
+if [ `uname -s` == "Darwin" ]; then
+  rsync -ruv Library ~
+fi

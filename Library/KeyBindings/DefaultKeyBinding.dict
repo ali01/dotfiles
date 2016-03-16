@@ -1,0 +1,22 @@
+{
+  "~d"      = "deleteWordForward:";
+  "^$_"     = "undo:";
+
+  /* home */
+  "\UF729"  = "moveToBeginningOfLine:";
+  "$\UF729" = "moveToBeginningOfLineAndModifySelection:";
+
+  /* end */
+  "\UF72B"  = "moveToEndOfLine:";
+  "$\UF72B" = "moveToEndOfLineAndModifySelection:";
+
+  /* page up/down */
+  "\UF72C"  = "pageUp:";
+  "\UF72D"  = "pageDown:";
+
+  "~f"      = "moveWordForward:";              /* M-f */
+  "~b"      = "moveWordBackward:";             /* M-b */
+  "^g"      = "_cancelKey:";                   /* C-g */
+  "^a"      = "moveToBeginningOfLine:";        /* C-a */
+  "^e"      = "moveToEndOfLine:";              /* C-e */
+}
