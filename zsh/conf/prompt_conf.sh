@@ -62,7 +62,7 @@ function git_precmd() {
   unset GIT_DIRTY
 }
 
-if [[ `hostname -s` != "alive-macbookpro" ]]
+if [[ `hostname -s` != "alive-macbookpro2" ]]
 then
   export PS1='${PR_PREFIX} ${PR_HOSTNAME}: '
 else
