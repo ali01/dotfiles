@@ -2,6 +2,7 @@
 
 
 alias ..="cd .."
+alias cl="clear"
 
 # generic shell options
 
