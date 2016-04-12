@@ -7,11 +7,12 @@
 	pager = less -S
 
 [alias]
-  sh = show --patience
-  sc = show -s
+  sh = show
+  sht = show --stat
+  shp = show --patience
+  shc = show -s
   shm = show --minimal
   shh = show --histogram
-  shd = show
   cm = commit
   cme = commit --allow-empty
   cmse = commit --allow-empty -m "stage"
@@ -66,6 +67,6 @@
     binary=/usr/bin/clang-format
     style=file
 [http]
-	cookiefile = ~/.gitcookies
+	cookiefile = /Users/alive/.gitcookies
 [pull]
 	rebase = true
