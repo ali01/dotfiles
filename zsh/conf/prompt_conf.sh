@@ -62,6 +62,14 @@ function git_precmd() {
   unset GIT_DIRTY
 }
 
+# tmux indicators
+if [[ -n $TMUX ]] ; then
+  TMUX_PROMPT=" ${CL_GREEN}●${CL_RESET}"
+elif [[ -z `tmux list-sessions 2>&1 | grep "no server"` ]] ; then
+  TMUX_PROMPT=" ${CL_YELLOW}■${CL_RESET}"
+fi
+
+
 if [[ `hostname -s` != "alive-macbookpro2" ]]
 then
   export PS1='${PR_PREFIX} ${PR_HOSTNAME}: '
@@ -69,6 +77,6 @@ else
   export PS1='${PR_PREFIX} '
 fi
 
-export RPS1='[${GIT_PROMPT}${PR_PWD}]'
+export RPS1='[${GIT_PROMPT}${PR_PWD}${TMUX_PROMPT}]'
 export PS2='%_>' # default
 
