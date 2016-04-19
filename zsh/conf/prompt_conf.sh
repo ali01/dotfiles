@@ -65,7 +65,7 @@ function git_precmd() {
 # tmux indicators
 if [[ -n $TMUX ]] ; then
   TMUX_PROMPT=" ${CL_GREEN}●${CL_RESET}"
-elif [[ -z `tmux list-sessions 2>&1 | grep "no server"` ]] ; then
+elif [[ -n `tmux list-sessions 2>&1 | grep "windows"` ]] ; then
   TMUX_PROMPT=" ${CL_YELLOW}■${CL_RESET}"
 fi
 
