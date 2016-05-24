@@ -3,6 +3,7 @@
 
 alias ..="cd .."
 alias cl="clear"
+alias date="date \"+%Y-%m-%d %H:%M:%S\""
 
 # generic shell options
 
