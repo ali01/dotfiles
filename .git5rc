@@ -1,0 +1,8 @@
+[alias]
+ediff = diff --exported
+
+[mail]
+description-from-git = True
+
+[export]
+description-from-git = True
