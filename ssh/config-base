@@ -3,18 +3,14 @@ ServerAliveInterval 30
 ControlMaster auto
 ControlPath ~/.ssh/master/%r@%h:%p
 
-Host simone
-    HostName simone.outlast.me
-    User alive
-
-Host tesseract
-    HostName tesseract.hot.corp.google.com
-    HostName tesseract.hot
+Host *
     ForwardAgent yes
-    PreferredAuthentications publickey,gssapi-with-mic,hostbased,keyboard-interactive,password
 
 Host prometheus
     HostName prometheus.pao.corp.google.com
     HostName prometheus.pao
-    ForwardAgent yes
-    PreferredAuthentications publickey,gssapi-with-mic,hostbased,keyboard-interactive,password
+
+Host AF03
+     HostName robotics-lab12.mtv.corp.google.com
+     ForwardAgent yes
+     PreferredAuthentications publickey,gssapi-with-mic,hostbased,keyboard-interactive,password

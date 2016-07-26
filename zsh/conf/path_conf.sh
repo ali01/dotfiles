@@ -14,6 +14,8 @@ path=('/usr/local/sbin' $go_base/bin $GOPATH/bin $path)
 typeset -U manpath
 manpath=('/usr/local/share/man' $manpath)
 
+export PYTHONPATH="$PYTHONPATH:/Library/Python/2.7/site-packages"
+
 # typeset -U cdpath
 # cdpath=(. $code "$code/academic")
 

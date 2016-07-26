@@ -67,3 +67,5 @@ stub_path=~/.zshrc_stub
 if [[ -e $stub_path ]] ; then
   . $stub_path
 fi
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
