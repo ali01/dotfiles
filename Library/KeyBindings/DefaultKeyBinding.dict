@@ -14,6 +14,11 @@
   "\UF72C"  = "pageUp:";
   "\UF72D"  = "pageDown:";
 
+  "^p"      = "moveUp:";
+  "^n"      = "moveDown:";
+  "^b"      = "moveLeft:";
+  "^f"      = "moveRight:";
+
   "~f"      = "moveWordForward:";              /* M-f */
   "~b"      = "moveWordBackward:";             /* M-b */
   "^g"      = "_cancelKey:";                   /* C-g */
