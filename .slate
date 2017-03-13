@@ -23,22 +23,22 @@ alias resizeOneFourthRR push right bar-resize:screenSizeX/4
 
 
 
-bind f1:ctrl chain ${resizeFullScreen} | sequence throw next > ${resizeFullScreen}
+bind `:ctrl,cmd chain ${resizeFullScreen} | sequence throw next > ${resizeFullScreen}
 
-bind f2:ctrl,cmd chain ${resizeTwoThirdsLeft} | sequence throw next > ${resizeTwoThirdsLeft}
-bind f1:ctrl,cmd chain ${resizeTwoThirdsCenter} | sequence throw next > ${resizeTwoThirdsCenter}
-bind f3:ctrl,cmd chain ${resizeTwoThirdsRight} | sequence throw next > ${resizeTwoThirdsRight}
+bind 1:ctrl,cmd chain ${resizeTwoThirdsLeft} | sequence throw next > ${resizeTwoThirdsLeft}
+bind 2:ctrl,cmd chain ${resizeTwoThirdsCenter} | sequence throw next > ${resizeTwoThirdsCenter}
+bind 3:ctrl,cmd chain ${resizeTwoThirdsRight} | sequence throw next > ${resizeTwoThirdsRight}
 
-bind f2:ctrl,shift chain ${resizeHalfLeft} | sequence throw next > ${resizeHalfLeft}
-bind f1:ctrl,shift chain ${resizeHalfCenter} | sequence throw next > ${resizeHalfCenter}
-bind f3:ctrl,shift chain ${resizeHalfRight} | sequence throw next > ${resizeHalfRight}
+bind 1:ctrl,shift chain ${resizeHalfLeft} | sequence throw next > ${resizeHalfLeft}
+bind 2:ctrl,shift chain ${resizeHalfCenter} | sequence throw next > ${resizeHalfCenter}
+bind 3:ctrl,shift chain ${resizeHalfRight} | sequence throw next > ${resizeHalfRight}
 
-bind f2:ctrl,alt chain ${resizeOneThirdLeft} | sequence throw next > ${resizeOneThirdLeft}
-bind f1:ctrl,alt chain ${resizeOneThirdCenter} | sequence throw next > ${resizeOneThirdCenter}
-bind f3:ctrl,alt chain ${resizeOneThirdRight} | sequence throw next > ${resizeOneThirdRight}
+bind 1:ctrl,alt chain ${resizeOneThirdLeft} | sequence throw next > ${resizeOneThirdLeft}
+bind 2:ctrl,alt chain ${resizeOneThirdCenter} | sequence throw next > ${resizeOneThirdCenter}
+bind 3:ctrl,alt chain ${resizeOneThirdRight} | sequence throw next > ${resizeOneThirdRight}
 
-bind f2:ctrl,shift,cmd chain ${resizeThreeFourthsLeft} | sequence throw next > ${resizeThreeFourthsLeft}
-bind f3:ctrl,shift,cmd chain ${resizeThreeFourthsRight} | sequence throw next > ${resizeThreeFourthsRight}
+bind 1:ctrl,shift,cmd chain ${resizeThreeFourthsLeft} | sequence throw next > ${resizeThreeFourthsLeft}
+bind 2:ctrl,shift,cmd chain ${resizeThreeFourthsRight} | sequence throw next > ${resizeThreeFourthsRight}
 
-bind f2:ctrl,shift,alt chain ${resizeOneFourthLL} | sequence throw next > ${resizeOneFourthLL}
-bind f3:ctrl,shift,alt chain ${resizeOneFourthRR} | sequence throw next > ${resizeOneFourthRR}
+bind 1:ctrl,shift,alt chain ${resizeOneFourthLL} | sequence throw next > ${resizeOneFourthLL}
+bind 2:ctrl,shift,alt chain ${resizeOneFourthRR} | sequence throw next > ${resizeOneFourthRR}
