@@ -32,6 +32,7 @@
 (whitespace-mode t)
 
 ;; Default tab size
+(setq-default indent-tabs-mode nil)
 (setq default-tab-width 2)
 
 ;; Coding style preferences.
