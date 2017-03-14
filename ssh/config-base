@@ -9,8 +9,9 @@ Host *
 Host prometheus
     HostName prometheus.pao.corp.google.com
     HostName prometheus.pao
+    ForwardAgent yes
 
-Host AF03
-     HostName robotics-lab12.mtv.corp.google.com
-     ForwardAgent yes
-     PreferredAuthentications publickey,gssapi-with-mic,hostbased,keyboard-interactive,password
+Host AF01
+    HostName robotics-lab10.mtv.corp.google.com
+    ForwardAgent yes
+    PreferredAuthentications publickey,gssapi-with-mic,hostbased,keyboard-interactive,password
