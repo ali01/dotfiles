@@ -17,7 +17,7 @@
  ;; If there is more than one, they won't work right.
  )
 
-(require 'color-theme)
+;; (require 'color-theme)
 
 (global-linum-mode 1)
 
@@ -67,5 +67,5 @@
 
 
 ;; Google Protobuf major mode
-(require 'protobuf-mode)
-(add-to-list 'auto-mode-alist '("\\.proto$" . protobuf-mode))
+; (require 'protobuf-mode)
+; (add-to-list 'auto-mode-alist '("\\.proto$" . protobuf-mode))
