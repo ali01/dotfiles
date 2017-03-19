@@ -29,13 +29,13 @@ bind 1:ctrl,cmd chain ${resizeTwoThirdsLeft} | sequence throw next > ${resizeTwo
 bind 2:ctrl,cmd chain ${resizeTwoThirdsCenter} | sequence throw next > ${resizeTwoThirdsCenter}
 bind 3:ctrl,cmd chain ${resizeTwoThirdsRight} | sequence throw next > ${resizeTwoThirdsRight}
 
-bind 1:ctrl,shift chain ${resizeHalfLeft} | sequence throw next > ${resizeHalfLeft}
-bind 2:ctrl,shift chain ${resizeHalfCenter} | sequence throw next > ${resizeHalfCenter}
-bind 3:ctrl,shift chain ${resizeHalfRight} | sequence throw next > ${resizeHalfRight}
+bind 1:ctrl,alt chain ${resizeHalfLeft} | sequence throw next > ${resizeHalfLeft}
+bind 2:ctrl,alt chain ${resizeHalfCenter} | sequence throw next > ${resizeHalfCenter}
+bind 3:ctrl,alt chain ${resizeHalfRight} | sequence throw next > ${resizeHalfRight}
 
-bind 1:ctrl,alt chain ${resizeOneThirdLeft} | sequence throw next > ${resizeOneThirdLeft}
-bind 2:ctrl,alt chain ${resizeOneThirdCenter} | sequence throw next > ${resizeOneThirdCenter}
-bind 3:ctrl,alt chain ${resizeOneThirdRight} | sequence throw next > ${resizeOneThirdRight}
+bind 1:ctrl,shift chain ${resizeOneThirdLeft} | sequence throw next > ${resizeOneThirdLeft}
+bind 2:ctrl,shift chain ${resizeOneThirdCenter} | sequence throw next > ${resizeOneThirdCenter}
+bind 3:ctrl,shift chain ${resizeOneThirdRight} | sequence throw next > ${resizeOneThirdRight}
 
 bind 1:ctrl,shift,cmd chain ${resizeThreeFourthsLeft} | sequence throw next > ${resizeThreeFourthsLeft}
 bind 2:ctrl,shift,cmd chain ${resizeThreeFourthsRight} | sequence throw next > ${resizeThreeFourthsRight}
