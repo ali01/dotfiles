@@ -7,11 +7,6 @@ Host *
     ForwardAgent yes
 
 Host prometheus
-    HostName prometheus.pao.corp.google.com
-    HostName prometheus.pao
+    HostName outlast.me
+    User alive
     ForwardAgent yes
-
-Host AF01
-    HostName robotics-lab10.mtv.corp.google.com
-    ForwardAgent yes
-    PreferredAuthentications publickey,gssapi-with-mic,hostbased,keyboard-interactive,password

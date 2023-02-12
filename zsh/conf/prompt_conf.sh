@@ -70,7 +70,7 @@ elif [[ -n `tmux list-sessions 2>&1 | grep "windows"` ]] ; then
 fi
 
 
-if [[ `hostname -s` != "alive-macbookpro2" ]]
+if [[ `hostname -s` != "AYahyaMBP16" ]]
 then
   export PS1='${PR_PREFIX} ${PR_HOSTNAME}: '
 else
